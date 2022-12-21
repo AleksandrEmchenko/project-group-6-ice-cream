@@ -1,2 +1,19 @@
 @import './common';
-@import './example';
+@import './reset';
+@import './variables';
+
+@import './hero-header';
+@import './products';
+@import './about';
+@import './advantages';
+@import './_gallery';
+@import './customer-reviews';
+@import './contacts';
+@import './footer';
+
+@import './modal-buy-now';
+@import './modal-info-about-product';
+@import './modal-read-more';
+@import './modal-our-location';
+@import './modal-franchise';
+

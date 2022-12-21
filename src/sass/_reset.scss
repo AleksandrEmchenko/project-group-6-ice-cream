@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin-top: 0;
+    padding: 0;
+}
+
+p, 
+ul{
+    margin-bottom: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+}
+
+body.modal-open{
+    overflow: hidden;
+} 
+
+body.no-scroll,
+body.mobile-open{
+    overflow: hidden;
+}
+
+.list{
+    list-style: none;
+}
+
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+            
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
