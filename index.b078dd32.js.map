@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,GAAE,WACDA,EAAE,eAAeC,MAAM,CACtBC,QAAQ,EACRC,MAAM,G","sources":["src/js/carousel.js"],"sourcesContent":["$(function () {\n\t$('.rev_slider').slick({\n\t\tarrows: false,\n\t\tdots: true\n\t})\n})"],"names":["$","slick","arrows","dots"],"version":3,"file":"index.b078dd32.js.map"}
