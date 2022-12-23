@@ -13,23 +13,22 @@
         background-image: url(../images/Backgroud_mobile_2x.jpg);  
     } 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/Background_tablet.jpg);
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-          background-image: url(../images/Background_tablet_2x.jpg);  
-        }
+    background-image: url(../images/Background_tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/Background_tablet_2x.jpg);  
     }
-        @media screen and (min-width: 1200px) {
-      max-width: 1600px;
-      padding-top: 200px;
-      padding-bottom: 200px;
-      background-image: url(../images/Backgroud_desktop.jpg);
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-          background-image: url(../images/Backgroud_desktop_2x.jpg);  
-    
+    }
+    @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../images/Backgroud_desktop.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/Backgroud_desktop_2x.jpg);  
     }
 }
 }
