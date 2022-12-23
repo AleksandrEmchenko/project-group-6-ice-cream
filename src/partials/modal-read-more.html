@@ -1,5 +1,31 @@
-<!-- 
-Вакансія.
-Модальне вікно.
-Бажаю успіху!
- -->
+<div>
+  <button type="button" class="about__button button" data-read-modal-open>
+    Read more
+  </button>
+</div>
+
+<div class="backdrop is-hidden" data-read-modal>
+  <div class="modal">
+    <button class="modal__close" type="button" data-read-modal-close>
+      <svg class="modal__close-icon" width="24" height="24">
+        <use href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <p class="modal__title">How it's made?</p>
+    <div class="iframe-container">
+      <iframe
+        class="iframe"
+        src="https://www.youtube.com/embed/omoCbKv7zaE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="modal-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>
