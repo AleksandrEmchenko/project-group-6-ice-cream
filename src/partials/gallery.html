@@ -5,7 +5,21 @@
 <div class="container gallery">
     <div class="gallery_container">
         <div class="gallery__item">
-            <img src="./images/ice-cream-gallery1-decktop.jpg" alt="ice-cream1">
+            <picture>
+                <source
+                srcset="./images/ice-cream-gallery1-decktop.jpg 1x, ./images/ice-cream-gallery1-decktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="./images/ice-cream-gallery1-tab.jpg 1x, ./images/ice-cream-gallery1-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/ice-cream-gallery1-mob.jpg 1x, ./images/ice-cream-gallery1-mob-2x.jpg 2x"
+                media="(max-width: 767px)"
+                >
+                <img src="./images/ice-cream-gallery1-mob.jpg" class="img" alt="" width="1013"/>
+            </picture>
         </div>
     </div>
 </div>
