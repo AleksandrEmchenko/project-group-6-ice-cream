@@ -1,1 +1,37 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+@mixin retina{
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (min-width: 480px){
+    @content;
+  }
+}
+
+@mixin mobile-only{
+  @media screen and (min-width: 480px) and (max-width:767px){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media screen and (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin tablet-only{
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media screen and (min-width: 1200px){
+    @content;
+  }
+}
