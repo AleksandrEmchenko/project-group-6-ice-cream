@@ -1,7 +1,162 @@
-<!--
-Анастасія.
-Меню + header. Ice cream made with passion
-Бажаю успіху! -->
-
-<p class="one">Hello, World!</p>
-<p class="two">This is our project about ice cream</p>
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>-->
+<header class='header'>
+  <div class='container'>
+    <div class='mob-header'>
+      <a class='header-logo' href='./index.html'>
+        <picture>
+          <source
+            srcset='./images/header-logo-desctop.png 1x, ./images/header-logo-desctop-2x.png 2x'
+            media='(min-width: 1200px)'>
+          <source
+            srcset='./images/header-logo-tab.png 1x, ./images/header-logo-tab-2x.png 2x'
+            media='(min-width: 768px)'>
+          <source
+            srcset='./images/header-logo-mobile.png 1x, ./images/header-logo-mobile-2x.png 2x'
+            media='(max-width: 767px)'>
+          <img
+            src='./images/header-logo-mobile.png'
+            alt='логотип з морозивом'>
+        </picture>
+      </a>
+      <nav class='header-navigation'>
+        <ul class="navigation-list">
+          <li><a href="./index.html" class="navigation-link">Home</a></li>
+          <li><a href="#" class="navigation-link">How it’s made?</a></li>
+          <li><a href="#" class="navigation-link">Our products</a></li>
+          <li><a href="#" class="navigation-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class='header-buttons'>
+        <button type='button' class='menu-button' data-menu-open>
+          <svg width='32' height='32'>
+            <use class='menu-icon' href='./images/sprite.svg#icon-menu'></use>
+          </svg>
+        </button>
+        <button type='button' class='menu-buy tab-button'>
+          Buy now
+          <svg class='button-arrow' width='12' height='12'>
+            <use href='./images/sprite.svg#icon-button-arrow'></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class='mobile-menu is-hidden is-open' data-menu>
+      <div class='mob-container'>
+        <div class='mob-menu-top'>
+          <a class='header-logo' href='./index.html'>
+            <picture>
+              <source
+                srcset='./images/header-logo-desctop.png 1x, ./images/header-logo-desctop-2x.png 2x'
+                media='(min-width: 1200px)'
+              >
+              <source
+                srcset='./images/header-logo-tab.png 1x, ./images/header-logo-tab-2x.png 2x'
+                media='(min-width: 768px)'>
+              <source
+                srcset='./images/header-logo-mobile.png 1x, ./images/header-logo-mobile-2x.png 2x'
+                media='(max-width: 767px)'>
+              <img
+                src='./images/header-logo-mobile.png'
+                alt='логотип з морозивом'>
+            </picture>
+          </a>
+          <button type='button' class='menu-button' data-menu-close>
+            <svg class='menu-icon' width='32' height='32'>
+              <use href='./images/sprite.svg#icon-cross'></use>
+            </svg>
+          </button>
+        </div>
+        <div class='mob-menu-center'>
+          <ul class='mob-navigation-list'>
+            <li class='item'><a class='mob-nav-link' href=''>Home</a></li>
+            <li class='item'><a class='mob-nav-link' href=''>How it’s made?</a></li>
+            <li class='item'><a class='mob-nav-link' href=''>Our products</a></li>
+            <li class='item'><a class='mob-nav-link' href=''>Contact</a></li>
+          </ul>
+        </div>
+        <div class='mob-menu-bottom'>
+          <button type='button' class='menu-buy mob-button'>
+            Buy now
+            <svg class='button-arrow' width='12' height='12'>
+              <use href='./images/sprite.svg#icon-button-arrow'></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class='hero'>
+  <div class='container'>
+  <h1 class='hero-title animate__animated animate__zoomInLeft'>ice cream made with <span class='bold'>passion</span></h1>
+  <div class='hero-buttons'>
+    <button type='button' class='products-button'>
+      Products
+    </button>
+    <button type='button' class='made-button'>
+      How it’s made?
+    </button>
+  </div>
+  <div class='hero-text'>
+    <picture class='hero-second-image'>
+      <source
+        srcset='./images/hero-second-image-desctop.png 1x, ./images/hero-second-image-desctop-2x.png 2x'
+        media='(min-width: 1200px)'
+      >
+      <source
+        srcset='./images/hero-second-image-tab.png 1x, ./images/hero-second-image-tab-2x.png 2x'
+        media='(min-width: 768px)'>
+      <img
+        src='./images/hero-second-image-tab.png'
+        alt='зображення кульок морозива'>
+    </picture>
+    <p class='hero-description animate__animated animate__zoomInUp'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+    <svg class='hero-arrow' width='32' height='32'>
+      <use href='./images/sprite.svg#icon-arrow'></use>
+    </svg>
+  </div>
+  <picture class='hero-dots'>
+    <source
+      srcset='./images/hero-dots-desctop.png 1x, ./images/hero-dots-desctop-2x.png 2x'
+      media='(min-width: 1200px)'
+    >
+    <source
+      srcset='./images/hero-dots-tab.png 1x, ./images/hero-dots-tab-2x.png 2x'
+      media='(min-width: 768px)'>
+    <source
+      srcset='./images/hero-dots-mobile.png 1x, ./images/hero-dots-mobile-2x.png 2x'
+      media='(max-width: 767px)'>
+    <img
+      src='./images/hero-dots-mobile.png'
+      alt='фонові крапки'>
+  </picture>
+  <picture class='hero-main-image animate__animated animate__slideInRight'>
+    <source
+      srcset='./images/hero-image-desctop.png 1x, ./images/hero-image-desctop-2x.png 2x'
+      media='(min-width: 1200px)'
+    >
+    <source
+      srcset='./images/hero-image-tab.png 1x, ./images/hero-image-tab-2x.png 2x'
+      media='(min-width: 768px)'>
+    <source
+      srcset='./images/hero-image-mobile.png 1x, ./images/hero-image-mobile-2x.png 2x'
+      media='(max-width: 767px)'>
+    <img
+      src='./images/hero-image-mobile.png'
+      alt='мультиплікаційний ріжок з морозивом'>
+  </picture>
+  <div class='business'>
+    <div class='first-part'>
+      <p class='amount'>16</p>
+      <p class='items'>cafes</p>
+    </div>
+    <div class='second-part'>
+      <p class='amount'>23</p>
+      <p class='items'>food trucks</p>
+    </div>
+  </div>
+  </div>
+</section>
+<!--<script src='./js/mob-menu.js'></script>-->
