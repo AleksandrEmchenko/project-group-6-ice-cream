@@ -29,17 +29,18 @@ body.mobile-open{
     overflow: hidden;
 }
 
-.list{
+ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
 
 .container{
-    margin: 0 auto;
-    padding: 0 15px;
             
-    @media screen and (min-width: 480px) {
-        width: 480px;
+    @media screen and (min-width: 320px) {
+        width: 320px;
     }
 
     @media screen and (min-width: 768px) {
