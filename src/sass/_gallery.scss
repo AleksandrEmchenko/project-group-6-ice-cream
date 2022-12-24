@@ -3,14 +3,13 @@
     width: 100%;
     padding-top: 0;
     padding-bottom: 80px;
+    // background-image: url(../images/Backgroud_mobile.jpg);
+    // z-index: -2;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
 
-    // background: linear-gradient(180deg, rgba(132, 161, 120, 1) 32px, rgba(132, 161, 120, 0) 32px);
-    // @media screen and (min-width: 768px) {
-    //     background: linear-gradient(180deg, rgba(132, 161, 120, 1) 144px, rgba(132, 161, 120, 0) 144px);
-    // }
-    // @media screen and (min-width: 1200px) {
-    //     background: linear-gradient(180deg, rgba(132, 161, 120, 1) 98px, rgba(132, 161, 120, 0) 98px);
-    // }
 }
 
 .gallery::before {
@@ -26,7 +25,7 @@
             height: 144px;
         }
         @media screen and (min-width: 1200px) {
-        height: 98px;
+            height: 98px;
         }
 }
 .gallery__item {
