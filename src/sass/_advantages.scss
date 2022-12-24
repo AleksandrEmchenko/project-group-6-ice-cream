@@ -41,10 +41,23 @@
   &:first-child {
     padding-top: 66px;
   }
+
+  @media screen and (min-width: 480px) {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: 768px) {
     &:nth-child(n + 1) {
       padding-top: 0;
     }
+    max-width: 152px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(n + 1) {
+      padding-top: 0;
+    }
+    max-width: 368px;
   }
   &::before {
     content: '';
@@ -61,10 +74,10 @@
       top: -34%;
     }
     @media screen and (min-width: 804px) {
-      top: -40%;
+      top: -34%;
     }
     @media screen and (min-width: 1018px) {
-      top: -48%;
+      top: -34%;
     }
     @media screen and (min-width: 1200px) {
       top: -47%;
