@@ -5,10 +5,10 @@
     padding-bottom: 80px;
     // background-image: url(../images/Backgroud_mobile.jpg);
     // z-index: -2;
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: cover;
-    flex-grow: 1;
+    // background-repeat: repeat-y;
+    // background-position: center;
+    // background-size: cover;
+    // flex-grow: 1;
 
 }
 
@@ -31,6 +31,9 @@
 .gallery__item {
     margin-top: 0;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
     .gallery__img {
         max-width: 280px;
@@ -46,3 +49,96 @@
         
     }
     
+    .star {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        
+        .slperekhodnik {
+            display: none;
+            @media screen and (min-width: 1200px) {
+                display: block;
+            max-width: 1013px;
+        margin: 0 auto;
+        width: 100%;
+            }
+        }
+        
+        .gablok_sedakoda {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+        
+        .slayder_karusel {
+        position: relative;
+        width: 500%;
+        font-size: 0;
+        animation: 20s gablok_sedakoda-ani infinite;
+        }
+        
+        .slayder_karusel figure {
+        width: 20%;
+        height: auto;
+        display: inline-block;
+        position: inherit;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        }
+        
+        .slayder_karusel img {
+        max-width: 100%;
+        vertical-align: bottom;
+        }
+        
+        .slayder_karusel img:hover {
+        filter: grayscale(90%);
+        }
+        
+        
+        @keyframes gablok_sedakoda-ani {
+          0%{left: 0%;}
+          
+          5%{left: 0%;}
+          
+          10%{left: 0%;}
+          
+          15%{left: 0%;}
+          
+          20%{left: -100%;}
+          
+          25%{left: -100%;}
+          
+          30%{left: -100%;}
+          
+          35%{left: -100%;}
+          
+          40%{left: -200%;}
+          
+          45%{left: -200%;}
+          
+          50%{left: -200%;}
+          
+          55%{left: -200%;}
+          
+          60%{left: -300%;}
+          
+          65%{left: -300%;}
+          
+          70%{left: -300%;}
+          
+          75%{left: -300%;}
+          
+          80%{left: -400%;}
+          
+          85%{left: -400%;}
+          
+          90%{left: -400%;}
+          
+          95% {left: -400%;}
+          
+          100% {left: 0%;}
+          
+          }
+        
