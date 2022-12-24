@@ -1,37 +1,12 @@
 .gallery {
-    padding-top: 0px;
-    padding-bottom: 80px;
-    background-image: url(../images/Backgroud_mobile.jpg);
+    width: 100%;
     background-color: #84A178; 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    flex-grow: 1;
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/Backgroud_mobile_2x.jpg);  
-    } 
-    @media screen and (min-width: 768px) {
-    background-image: url(../images/Background_tablet.jpg);
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/Background_tablet_2x.jpg);  
-    }
-    }
-    @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: url(../images/Backgroud_desktop.jpg);
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/Backgroud_desktop_2x.jpg);  
-    }
-}
+    background: linear-gradient(180deg, rgba(132, 161, 120, 1) 30px, rgba(132, 161, 120, 0) 30px);
 }
 .gallery__item {
-    margin: 0 auto;
-}
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    .img {
+        max-width: 280px;}
+    }
