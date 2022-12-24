@@ -24,20 +24,20 @@ body{
     font-style: normal;
     cursor: url('./../images/cursor.png'), auto;
     
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
-    @media screen and (max-width: 767px){
-        background-image: url('../images/background/background-mobile.png');
-    }
+    // @media screen and (max-width: 767px){
+    //     background-image: url('../images/background/background-mobile.png');
+    // }
 
-    @media screen and (min-width: 768px){
-        background-image: url('../images/background/background-tablet.png');
-    }
+    // @media screen and (min-width: 768px){
+    //     background-image: url('../images/background/background-tablet.png');
+    // }
 
-    @media screen and (min-width: 1200px){
-        background-image: url('../images/background/background-desktop.png');
-    }
+    // @media screen and (min-width: 1200px){
+    //     background-image: url('../images/background/background-desktop.png');
+    // }
 }
 
 body.modal-open{
