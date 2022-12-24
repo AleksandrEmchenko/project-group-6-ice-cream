@@ -1,3 +1,7 @@
+.rev_slider {
+	margin: 0 auto;
+}
+
 .photo {
 	display: block;
 	background-repeat: no-repeat;
@@ -7,19 +11,28 @@
 	margin: 0 auto 32px;
 }
 
+.slide_item {
+	@include mobile {
+		width: 285px;	
+	}
+}
+
 .wrapper {
+	display: flex;
+	align-items: center;
 	width: 280px;
 	height: 256px;
 	padding: 35px 39px;
 	margin: 0 auto;
 	background-color: #84A178;
-	border-radius: 24px;
+	border-radius: 10px;
 	margin-bottom: 36px;
 
 	@include tablet {
 		width: 705px;
 		height: 138px;
 		padding: 28px 80px 29px 80px;
+		border-radius: 24px;
 	}
 
 	@include desktop {
@@ -30,7 +43,8 @@
 	.text {
 		font-weight: 400;
 		font-size: 12px;
-		line-height: 2.58;
+		line-height: 2.583;
+		letter-spacing: 0.04em;
 
 		text-align: center;
 		color: var(--textColorMainAlt);
@@ -38,12 +52,13 @@
 		@include tablet {
 			font-weight: 500;
 			font-size: 14px;
-			line-height: 1.875;
+			line-height: 1.857;
 			letter-spacing: 0.04em;
 		}
 
 		@include desktop {
 			font-size: 16px;
+			line-height: 1.875;
 		}
 	}
 }
@@ -51,16 +66,17 @@
 .name {
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 1.875;
+	line-height: 1.85;
 	text-align: center;
 	color: var(--textColorMain);
 
 	@include tablet {
 		font-size: 16px;
+		line-height: 1.875;
 	}
 }
 
-.slick-dots {
+.rev_slider .slick-dots {
 	list-style: none;
 	padding: 0;
 	margin: 0;
