@@ -3,6 +3,13 @@
     width: 100%;
     padding-top: 0;
     padding-bottom: 80px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 140px;
+    }
+
     // background-image: url(../images/Backgroud_mobile.jpg);
     // z-index: -2;
     // background-repeat: repeat-y;
