@@ -28,3 +28,17 @@
   }
 })();
 
+(() => {
+  const refs = {
+    openBuyModalBtn: document.querySelector("[data-buy-modal-open]"),
+    closeBuyModalBtn: document.querySelector("[data-buy-modal-close]"),
+    buyModal: document.querySelector("[data-buy-modal]"),
+  };
+
+  refs.openBuyModalBtn.addEventListener("click", toggleBuyModal);
+  refs.closeBuyModalBtn.addEventListener("click", toggleBuyModal);
+
+  function toggleBuyModal() {
+    refs.buyModal.classList.toggle("is-hidden");
+  }
+})();
