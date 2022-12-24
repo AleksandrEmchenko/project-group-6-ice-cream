@@ -1,12 +1,29 @@
 .gallery {
     width: 100%;
-    background-color: #84A178; 
-    background: linear-gradient(180deg, rgba(132, 161, 120, 1) 30px, rgba(132, 161, 120, 0) 30px);
+    background: linear-gradient(180deg, rgba(132, 161, 120, 1) 32px, rgba(132, 161, 120, 0) 32px);
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(180deg, rgba(132, 161, 120, 1) 144px, rgba(132, 161, 120, 0) 144px);
+    }
+    @media screen and (min-width: 1200px) {
+        background: linear-gradient(180deg, rgba(132, 161, 120, 1) 98px, rgba(132, 161, 120, 0) 98px);
+    }
 }
 .gallery__item {
     margin-top: 0;
     margin-bottom: 80px;
     text-align: center;
-    .img {
-        max-width: 280px;}
+}
+    .gallery__img {
+        max-width: 280px;
+        border-radius: 8px;
+        @media screen and (min-width: 768px) {
+            max-width: 704px;
+            border-radius: 18px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1013px;
+            border-radius: 24px;
+        }
+        
     }
+    
