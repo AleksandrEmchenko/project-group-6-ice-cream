@@ -33,16 +33,18 @@
     color: var(--textColorMainAlt);
     font-size: 18px;
     line-height: 1.2222;
-    
+    max-width: 232px;
     @media screen and (min-width: 768px) {
         font-size: 26px;
         line-height: 1.2307;
         letter-spacing: 0.04em;
+        max-width: 352px;
     }
     @media screen and (min-width: 1200px) {
         font-weight: 400;
         font-size: 30px;
         line-height: 1.2333;
+        max-width: 100%;
     }
 }
 .footer-accent {
@@ -51,6 +53,7 @@
     line-height: 1.2058;
     letter-spacing: 0.04em;
     margin-top: 16px;
+    max-width: 200px;
     @media screen and (min-width: 768px) {
         font-size: 48px;
         letter-spacing: 0.06em;
@@ -150,6 +153,8 @@
     justify-content: center;
     border-top: 1px solid #E1E1E1;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
     @media screen and (min-width: 768px) {
         padding-top: 12px;
         padding-bottom: 12px;
