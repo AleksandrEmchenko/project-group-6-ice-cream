@@ -287,7 +287,8 @@
 .contacts__btn-icon {
     margin-left: 4px;
 
-    .contacts__btn-form:focus & {
+    .contacts__btn-form:focus &,
+    .contacts__btn-map:focus & {
         fill: #ffffff;
     }
 }
