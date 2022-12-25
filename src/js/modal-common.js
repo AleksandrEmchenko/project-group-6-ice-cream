@@ -27,4 +27,3 @@
     refs.readModal.classList.toggle("is-hidden");
   }
 })();
-
