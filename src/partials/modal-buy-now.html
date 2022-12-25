@@ -1,5 +1,75 @@
-<!-- 
-Вакансія.
-Модальне вікно.
-Бажаю успіху!
- -->
+<div>
+  <button type="button" class="about__button button" data-buy-modal-open>
+    Buy now
+  </button>
+</div>
+
+<div class="backdrop is-hidden" data-buy-modal>
+  <div class="modal buy-now-modal">
+    <button class="modal__close" type="button" data-buy-modal-close>
+      <svg class="modal__close-icon" width="24" height="24">
+        <use href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <p class="modal__title buy-now-title">Buy now</p>
+
+    <form class="form">
+      <div class="form__head" role="group">
+        <label class="product-label">
+          <input
+            class="basic-checkbox visually-hidden"
+            type="checkbox"
+            name="product-label"
+          />
+          <span class="custom-checkbox custom-checkbox--green">ice cream </span>
+        </label>
+
+        <label class="product-label">
+          <input
+            class="basic-checkbox visually-hidden"
+            type="checkbox"
+            name="product-label"
+          />
+          <span class="custom-checkbox custom-checkbox--yellow">
+            ice coffee
+          </span>
+        </label>
+
+        <label class="product-label">
+          <input
+            class="basic-checkbox visually-hidden"
+            type="checkbox"
+            name="product-label"
+          />
+          <span class="custom-checkbox custom-checkbox--brown">Milkshake</span>
+        </label>
+      </div>
+
+      <input
+        class="modal__input"
+        type="text"
+        name="name"
+        placeholder="Name"
+        minlength="2"
+        required
+      />
+
+      <input
+        class="modal__input"
+        type="tel"
+        name="phone"
+        placeholder="Phone"
+        minlength="7"
+        required
+      />
+
+      <textarea
+        class="modal__textarea modal__input"
+        name="comment"
+        placeholder="Comment"
+      ></textarea>
+
+      <button class="modal__button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
