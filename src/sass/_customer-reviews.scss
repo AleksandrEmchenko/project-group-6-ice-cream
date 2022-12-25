@@ -4,7 +4,18 @@
 // }
 
 .slider {
-	padding-bottom: 393px;
+	@media screen and (max-width: 767px) {
+					padding-bottom: 440px;
+				}
+
+	@media screen and (min-width: 768px) {
+                padding-bottom: 375px;
+            }
+
+    @media screen and (min-width: 1200px) {
+            padding-bottom: 280px;
+        }
+	
 // 	background-image: url(./../images/backgroud-mobile.jpg);
 // 	background-position: center;
 // 	background-size: contain;
