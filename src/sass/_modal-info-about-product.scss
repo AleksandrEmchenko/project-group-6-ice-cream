@@ -73,7 +73,7 @@ padding: 0;
     background: transparent;
 
     &:hover, &:focus {
-        cursor: pointer;
+    cursor: url('./../images/yellow-cursor.png'), auto;
     }
 }
 
@@ -95,25 +95,7 @@ padding: 0;
     justify-content: center;
 }
 
-.products-moadal-image::before {
-position: absolute;
-content: ' ';
-transform: translateY(-7px);
 
-    width: 132px;
-    height: 132px;
-    z-index: 1;
-
-    background-image: url(./../images/products-modal-icecream-x1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(./../images/products-modal-icecream-x2.png);
-    }
-        }
 
 
 .products-moadal-image {
@@ -123,9 +105,89 @@ transform: translateY(-7px);
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
             box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
         border-radius: 50%;
-        
-        
+    &::before {
+            position: absolute;
+            content: ' ';
+            transform: translateY(-7px);
+    
+            width: 132px;
+            height: 132px;
+            z-index: 1;
+    
+            background-image: url(./../images/products-modal-icecream-x1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(./../images/products-modal-icecream-x2.png);
+            }
+        }
     }
+
+.products-moadal-image-ice-coffe {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    background: linear-gradient(0deg, #f8d24eb3, #f8d24eb3),
+        #d9d9d9;
+    box-shadow: 0 5.40397px 20.2649px #99721740;
+    border-radius: 50%;
+
+    &::before {
+        position: absolute;
+        content: ' ';
+        transform: translateY(-7px);
+
+        width: 132px;
+        height: 132px;
+        z-index: 1;
+
+        background-image: url(./../images/products-ice-coffee-mobile-x1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(./../images/products-ice-coffee-mobile-x2.png);
+        }
+    }
+}
+
+.products-moadal-image-milkshakes {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    background: linear-gradient(0deg, #d5753fb3, #d5753fb3),
+        #d9d9d9;
+    box-shadow: 0 5.41333px 20.3px #00000040;
+    border-radius: 50%;
+
+    &::before {
+        position: absolute;
+        content: ' ';
+        transform: translateY(-7px);
+
+        width: 132px;
+        height: 132px;
+        z-index: 1;
+
+        background-image: url(./../images/products-milkshakes-mobile-x1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(./../images/products-milkshakes-mobile-x2.png);
+        }
+    }
+}
+
+    // .products-moadal-image-ice-coffe {background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    //         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);}
 
 .products-moadal__info-wrap {
     display: flex;
@@ -148,7 +210,61 @@ transform: translateY(-7px);
     
         border: 2px solid #9CBE8F;
         border-radius: 40px;
+        // transform: scale(1);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+
+        &:hover, &:focus {
+            transform: scale(1.1);
+        }
     }
+
+        .products-moadal__info-ice-coffe {
+            display: flex;
+                justify-content: center;
+                width: 53px;
+                height: 72px;
+                left: 20px;
+                top: 265px;
+            
+                border: 2px solid #efd478;
+                border-radius: 40px;
+                // transform: scale(1);
+                transition-property: transform;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-delay: 0;
+            
+                &:hover,
+                &:focus {
+                    transform: scale(1.1);
+                }
+        }
+
+
+.products-moadal__info-milkshekes {
+    display: flex;
+    justify-content: center;
+    width: 53px;
+    height: 72px;
+    left: 20px;
+    top: 265px;
+
+    border: 2px solid #d6936d;;
+    border-radius: 40px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
 
     .products-moadal__info-circle {
         position: relative;
@@ -163,6 +279,19 @@ transform: translateY(-7px);
             background: #9CBE8F;
             border: 2px solid #9CBE8F;
             box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+            
+    }
+
+    .products-moadal__yelow-circle {background: #efd478;
+        border: 2px solid #efd478;
+        box-shadow: 0 5.40397px 20.2649px #99721740; }
+
+
+    .products-moadal__brown-circle {
+        background: #d6936d;;
+       
+        border: 2px solid #d6936d;
+        box-shadow: 0 5.41333px 20.3px #00000040;
     }
 
     .products-moadal__info-composition {
@@ -326,6 +455,11 @@ margin-bottom: 16px;
         line-height: 1.2;
         color: #131313;
 
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 1;
+
         &:hover {
             background: #0A8817;
         }
@@ -340,11 +474,6 @@ margin-bottom: 16px;
     }
 
 
-// .is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
 
 
 
