@@ -46,6 +46,9 @@
     transform: scale(1.5);
     cursor: url('./../images/yellow-cursor.png'), auto;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .navigation-list {
@@ -80,6 +83,7 @@
     transform: scale(1.2);
     color: var(--secondaryColor);
     cursor: url('./../images/yellow-cursor.png'), auto;
+    outline: none;
   }
 }
 
@@ -106,6 +110,7 @@
   .menu-button:focus & {
     fill: var(--hoverIconFill);
     cursor: url('./../images/yellow-cursor.png'), auto;
+    outline: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -193,6 +198,7 @@
     transform: scale(1.2);
     cursor: url('./../images/yellow-cursor.png'), auto;
     color: var(--blackColor);
+    outline: none;
   }
 }
 
@@ -225,6 +231,7 @@
   &:focus {
     background:var(--hoverIconFill);
     color: var(--iconFill);
+    outline: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -320,6 +327,7 @@
   &:focus {
     border-color: var(--hoverIconFill);
     color: var(--iconFill);
+    outline: none;
   }
 
   @media screen and (min-width: 1200px) {
@@ -354,6 +362,7 @@
 
   &:focus {
     color: var(--iconFill);
+    outline: none;
   }
 
   @media screen and (min-width: 1200px) {
