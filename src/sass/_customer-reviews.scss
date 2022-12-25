@@ -1,3 +1,24 @@
+// .slider {
+
+			
+// }
+
+.slider {
+	padding-bottom: 393px;
+	background-image: url(./../images/backgroud-mobile.jpg);
+	background-position: center;
+	background-size: contain;
+
+	@media screen and (min-width: 768px) {
+					background-image: url(./../images/background-tablet.jpg);
+
+			}
+
+			@media screen and (min-width: 1200px) {
+					background-image: url(./../images/backgroud-desktop.jpg);
+}
+}
+
 .rev_slider {
 	margin: 0 auto;
 }
@@ -26,7 +47,7 @@
 	margin: 0 auto;
 	background-color: #84A178;
 	border-radius: 10px;
-	margin-bottom: 36px;
+	margin-bottom: 32px;
 
 	@include tablet {
 		width: 705px;
@@ -44,7 +65,7 @@
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 2.583;
-		letter-spacing: 0.04em;
+		letter-spacing: 0.06em;
 
 		text-align: center;
 		color: var(--textColorMainAlt);
@@ -80,6 +101,7 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
+
 	position: absolute;
 	top: 100%;
 	bottom: 0;
@@ -89,6 +111,14 @@
 	li {
 		display: inline-block;
 		margin: 0;
+		margin-top: 12px;
+
+		@include tablet {
+			margin-top: 28px;
+		}
+	}
+
+	li:not(:last-child) {
 		margin-right: 18px;
 	}
 
