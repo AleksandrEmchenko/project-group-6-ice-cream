@@ -1,13 +1,11 @@
 .contacts__container {
+    background-color: #84A178;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
 
     width: 100%;
-
-    background-color: 84a178;
-
     @media screen and (min-width: 480px) {
         max-width: 480px;
     }
@@ -17,7 +15,6 @@
         padding-left: 32px;
         padding-right: 32px;
     }
-
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
         padding-left: 16px;
@@ -31,7 +28,6 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-
     @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
