@@ -5,18 +5,18 @@
 
 .slider {
 	padding-bottom: 393px;
-	background-image: url(./../images/backgroud-mobile.jpg);
-	background-position: center;
-	background-size: contain;
+// 	background-image: url(./../images/backgroud-mobile.jpg);
+// 	background-position: center;
+// 	background-size: contain;
 
-	@media screen and (min-width: 768px) {
-					background-image: url(./../images/background-tablet.jpg);
+// 	@media screen and (min-width: 768px) {
+// 					background-image: url(./../images/background-tablet.jpg);
 
-			}
+// 			}
 
-			@media screen and (min-width: 1200px) {
-					background-image: url(./../images/backgroud-desktop.jpg);
-}
+// 			@media screen and (min-width: 1200px) {
+// 					background-image: url(./../images/backgroud-desktop.jpg);
+// }
 }
 
 .rev_slider {

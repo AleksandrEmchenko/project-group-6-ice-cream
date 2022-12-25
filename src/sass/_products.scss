@@ -393,7 +393,7 @@ bottom: 16;
     background: transparent;
     border: none;
 
-    cursor: pointer;
+    cursor: url('./../images/yellow-cursor.png'), auto;
 
     transition-property: fill;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
