@@ -31,7 +31,7 @@
             <use class='menu-icon' href='./images/sprite.svg#icon-menu'></use>
           </svg>
         </button>
-        <button type='button' class='menu-buy tab-button'>
+        <button type='button' class='menu-buy tab-button' data-buy-modal-open>
           Buy now
           <svg class='button-arrow' width='12' height='12'>
             <use href='./images/sprite.svg#icon-button-arrow'></use>
@@ -74,7 +74,7 @@
           </ul>
         </div>
         <div class='mob-menu-bottom'>
-          <button type='button' class='menu-buy mob-button'>
+          <button type='button' class='menu-buy mob-button' data-buy-modal-open>
             Buy now
             <svg class='button-arrow' width='12' height='12'>
               <use href='./images/sprite.svg#icon-button-arrow'></use>
@@ -89,12 +89,8 @@
   <div class='hero-container'>
   <h1 class='hero-title animate__animated animate__zoomInLeft'>ice cream made with <span class='bold'>passion</span></h1>
   <div class='hero-buttons'>
-    <button type='button' class='products-button'>
-      Products
-    </button>
-    <button type='button' class='made-button'>
-      How it’s made?
-    </button>
+    <a href="#products" class="products-button">Products</a>
+    <a href="#process" class="made-button">How it’s made?</a>
   </div>
   <div class='hero-text'>
     <picture class='hero-second-image'>
