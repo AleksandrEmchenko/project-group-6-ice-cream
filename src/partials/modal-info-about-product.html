@@ -3,3 +3,368 @@
 Модальне вікно. Chololate icecream.
 Бажаю успіху!
  -->
+
+<div class="products-moadal__backdrop is-hidden" data-products-modal>
+  <div class="products-moadal">
+    <button
+      type="button"
+      class="products-moadal__close-btn"
+      data-products-modal-close
+    >
+      <svg width="20" height="20">
+        <use
+          href="./images/sprite.svg#icon-cross"
+          class="products-moadal__icon-cross"
+        ></use>
+      </svg>
+    </button>
+    <h3 class="products-moadal__title">Chololate icecream</h3>
+    <div class="products-moadal__image-wrap">
+      <div class="products-moadal-image"></div>
+      <div class="products-moadal__circle"></div>
+    </div>
+
+    <ul class="products-moadal__info-wrap">
+      <li class="products-moadal__info">
+        <div class="products-moadal__info-circle">
+          <p class="products-moadal__info-composition">320</p>
+          <p class="products-moadal__info-name">kcal</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info">
+        <div class="products-moadal__info-circle">
+          <p class="products-moadal__info-composition">4g</p>
+          <p class="products-moadal__info-name">Prote...</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info">
+        <div class="products-moadal__info-circle">
+          <p class="products-moadal__info-composition">8,2g</p>
+          <p class="products-moadal__info-name">Fats</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info">
+        <div class="products-moadal__info-circle">
+          <p class="products-moadal__info-composition">40,4g</p>
+          <p class="products-moadal__info-name">Carbs</p>
+        </div>
+      </li>
+    </ul>
+    <h3 class="products-moadal__ingredients">Ingredients</h3>
+
+    <ul>
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Milk</span>
+        <span class="products-moadal__item">100ml</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Belgian chocolate</span>
+        <span class="products-moadal__item">20g</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Cream</span>
+        <span class="products-moadal__item">150 ml</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Cocoa powder</span>
+        <span class="products-moadal__item"> 30g</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Sugar</span>
+        <span class="products-moadal__item">40g</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Vanilla sugar</span>
+        <span class="products-moadal__item">10g</span>
+      </li>
+    </ul>
+
+    <form name="products-form" autocomplete="on" class="products-moadal__form">
+      <div class="products-form__name">
+        <label for="user_name" class="products-form__name-lable"></label>
+        <input
+          type="text"
+          name="name"
+          id="user_name"
+          placeholder="Name"
+          minlength="2"
+          required
+          class="products-moadal__name-input"
+        />
+      </div>
+
+      <div class="products-form__phone">
+        <label for="user_phone" class="products-form__phone-lable"></label>
+        <input
+          type="tel"
+          name="phone"
+          id="user_phone"
+          placeholder="Phone"
+          minlength="4"
+          required
+          class="products-moadal__phone-input"
+        />
+      </div>
+
+      <textarea
+        name="comment"
+        rows="10"
+        placeholder="Comment"
+        class="products-moadal__textarea"
+      ></textarea>
+
+      <button type="submit" class="products-form__btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- modal ice coffe -->
+
+<div class="products-moadal__backdrop is-hidden" data-icecoffee-modal>
+  <div class="products-moadal">
+    <button
+      type="button"
+      class="products-moadal__close-btn"
+      data-icecoffee-modal-close
+    >
+      <svg width="20" height="20">
+        <use
+          href="./images/sprite.svg#icon-cross"
+          class="products-moadal__icon-cross"
+        ></use>
+      </svg>
+    </button>
+    <h3 class="products-moadal__title">ICE COFFEE</h3>
+    <div class="products-moadal__image-wrap">
+      <div class="products-moadal-image-ice-coffe"></div>
+      <div class="products-moadal__circle"></div>
+    </div>
+
+    <ul class="products-moadal__info-wrap">
+      <li class="products-moadal__info-ice-coffe">
+        <div class="products-moadal__info-circle products-moadal__yelow-circle">
+          <p class="products-moadal__info-composition">100</p>
+          <p class="products-moadal__info-name">kcal</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info products-moadal__info-ice-coffe">
+        <div class="products-moadal__info-circle products-moadal__yelow-circle">
+          <p class="products-moadal__info-composition">1g</p>
+          <p class="products-moadal__info-name">Prote...</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info products-moadal__info-ice-coffe">
+        <div class="products-moadal__info-circle products-moadal__yelow-circle">
+          <p class="products-moadal__info-composition">2g</p>
+          <p class="products-moadal__info-name">Fats</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info products-moadal__info-ice-coffe">
+        <div class="products-moadal__info-circle products-moadal__yelow-circle">
+          <p class="products-moadal__info-composition">40,4g</p>
+          <p class="products-moadal__info-name">Carbs</p>
+        </div>
+      </li>
+    </ul>
+    <h3 class="products-moadal__ingredients">Ingredients</h3>
+
+    <ul>
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Milk</span>
+        <span class="products-moadal__item">175ml</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Espresso</span>
+        <span class="products-moadal__item">30ml</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Vanilla syrup</span>
+        <span class="products-moadal__item">20 ml</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Cocoa powder</span>
+        <span class="products-moadal__item"> 30g</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Ice cube</span>
+        <span class="products-moadal__item">4</span>
+      </li>
+    </ul>
+
+    <form name="products-form" autocomplete="on" class="products-moadal__form">
+      <div class="products-form__name">
+        <label for="user_name" class="products-form__name-lable"></label>
+        <input
+          type="text"
+          name="name"
+          id="user_name"
+          placeholder="Name"
+          minlength="2"
+          required
+          class="products-moadal__name-input"
+        />
+      </div>
+
+      <div class="products-form__phone">
+        <label for="user_phone" class="products-form__phone-lable"></label>
+        <input
+          type="tel"
+          name="phone"
+          id="user_phone"
+          placeholder="Phone"
+          minlength="4"
+          required
+          class="products-moadal__phone-input"
+        />
+      </div>
+
+      <textarea
+        name="comment"
+        rows="10"
+        placeholder="Comment"
+        class="products-moadal__textarea"
+      ></textarea>
+
+      <button type="submit" class="products-form__btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- modal milkshakes -->
+
+<div class="products-moadal__backdrop is-hidden" data-milkshakes-modal>
+  <div class="products-moadal">
+    <button
+      type="button"
+      class="products-moadal__close-btn"
+      data-milkshakes-modal-close
+    >
+      <svg width="20" height="20">
+        <use
+          href="./images/sprite.svg#icon-cross"
+          class="products-moadal__icon-cross"
+        ></use>
+      </svg>
+    </button>
+    <h3 class="products-moadal__title">MILKSHAKES</h3>
+    <div class="products-moadal__image-wrap">
+      <div class="products-moadal-image-milkshakes"></div>
+      <div class="products-moadal__circle"></div>
+    </div>
+
+    <ul class="products-moadal__info-wrap">
+      <li class="products-moadal__info-milkshekes">
+        <div class="products-moadal__info-circle products-moadal__brown-circle">
+          <p class="products-moadal__info-composition">7220</p>
+          <p class="products-moadal__info-name">kcal</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info-milkshekes">
+        <div class="products-moadal__info-circle products-moadal__brown-circle">
+          <p class="products-moadal__info-composition">14g</p>
+          <p class="products-moadal__info-name">Prote...</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info-milkshekes">
+        <div class="products-moadal__info-circle products-moadal__brown-circle">
+          <p class="products-moadal__info-composition">41g</p>
+          <p class="products-moadal__info-name">Fats</p>
+        </div>
+      </li>
+
+      <li class="products-moadal__info-milkshekes">
+        <div class="products-moadal__info-circle products-moadal__brown-circle">
+          <p class="products-moadal__info-composition">73g</p>
+          <p class="products-moadal__info-name">Carbs</p>
+        </div>
+      </li>
+    </ul>
+    <h3 class="products-moadal__ingredients">Ingredients</h3>
+
+    <ul>
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Milk</span>
+        <span class="products-moadal__item">100ml</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Belgian chocolate</span>
+        <span class="products-moadal__item">20g</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Cream</span>
+        <span class="products-moadal__item">150 ml</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Cocoa powder</span>
+        <span class="products-moadal__item"> 30g</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Sugar</span>
+        <span class="products-moadal__item">40g</span>
+      </li>
+
+      <li class="products-moadal__list-item">
+        <span class="products-moadal__item">Vanilla sugar</span>
+        <span class="products-moadal__item">10g</span>
+      </li>
+    </ul>
+
+    <form name="products-form" autocomplete="on" class="products-moadal__form">
+      <div class="products-form__name">
+        <label for="user_name" class="products-form__name-lable"></label>
+        <input
+          type="text"
+          name="name"
+          id="user_name"
+          placeholder="Name"
+          minlength="2"
+          required
+          class="products-moadal__name-input"
+        />
+      </div>
+
+      <div class="products-form__phone">
+        <label for="user_phone" class="products-form__phone-lable"></label>
+        <input
+          type="tel"
+          name="phone"
+          id="user_phone"
+          placeholder="Phone"
+          minlength="4"
+          required
+          class="products-moadal__phone-input"
+        />
+      </div>
+
+      <textarea
+        name="comment"
+        rows="10"
+        placeholder="Comment"
+        class="products-moadal__textarea"
+      ></textarea>
+
+      <button type="submit" class="products-form__btn">Submit</button>
+    </form>
+  </div>
+</div>

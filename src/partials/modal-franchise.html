@@ -1,5 +1,43 @@
-<!-- 
-Вакансія.
-Модальне вікно.
-Бажаю успіху!
- -->
+<div class="backdrop is-hidden" data-franchise>
+    <div class="franchise-modal">
+        <h1 class="franchise__title">Thank you for your interest in owning an Ice Cream shop</h1>
+        <p class="franchise__text">Due to the overwhelming volume of franchise requests we are not accepting new
+            franchisee applications at this time. Once
+            the application process resumes, we will contact you for further information. Please fill out the contact
+            information
+            below and we will reach out for additional information. We appreciate your patience.</p>
+        <form class="franchise-form">
+            <div class="franchise-inputs">
+                <label for="user-name" class="franchise-form__title">
+                    <input type="text" name="user-name" class="franchise__input" id="user-name" placeholder="Name" required/>
+                    <span></span>
+                    <p class="error-message">Please enter your name</p>
+                </label>
+
+                <label for="user-tel" class="franchise-form__title">
+                    <input type="tel" name="user-tel" class="franchise__input" id="user-tel" placeholder="Phone"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
+                        <span></span>
+                        <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
+                </label>
+
+                <label for="user-mail" class="franchise-form__title">
+                    <input type="email" name="user-mail" class="franchise__input" id="user-mail" placeholder="Email" />
+                    <span></span>
+                    <p class="error-message">Please enter a valid e-mail.</p>
+                </label>
+
+                <label for="comment" class="franchise-form__title">
+                    <textarea name="comment" class="franchise__input" id="comment" placeholder="Comment"></textarea>
+                </label>
+            </div>
+
+            <button class="send-button" type="submit">Submit</button>
+        </form>
+        <button class="close-button" data-franchise-close>
+            <svg width="20" height="20">
+                <use href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+        </button>
+    </div>
+</div>

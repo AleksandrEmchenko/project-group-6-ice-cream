@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1;
 
   width: 100%;
   height: 100%;
@@ -54,6 +54,8 @@
 
     padding: 32px 60px;
   }
+
+  overflow: auto;
 }
 
 .modal__close {
@@ -131,6 +133,8 @@
   border-radius: 10px;
   background-color: #f8d24e;
 
+  transition: 250ms linear;
+
   &:hover {
     background-color: #0a8817;
   }
@@ -146,3 +150,4 @@
   line-height: 140%;
   color: var(--textColorMain);
 }
+

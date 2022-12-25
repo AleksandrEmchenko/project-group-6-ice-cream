@@ -1,0 +1,219 @@
+.buy-now-modal {
+  @include tablet {
+    padding-right: 54px;
+    padding-left: 54px;
+  }
+}
+
+.buy-now-title {
+  margin-bottom: 83px;
+  @include tablet {
+    margin-bottom: 103px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__head {
+  margin-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+
+  @include tablet {
+    margin-bottom: 40px;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.product-label {
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 16px;
+  width: 132px;
+  height: 135px;
+
+  border-radius: 15px;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  white-space: nowrap;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--textColorMain);
+
+  transition: background 250ms linear;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transform: translate(-2px, -50%);
+
+    display: block;
+    border-radius: 50%;
+    width: 132px;
+    height: 132px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translate(-2px, -45%);
+
+    display: block;
+    border-radius: 50%;
+    width: 132px;
+    height: 132px;
+  }
+}
+
+.custom-checkbox--green {
+  border: 2px solid #96af8c;
+
+  &::before {
+    background-image: url(../images/buy-now-modal-ice-cream.jpg);
+    @include retina {
+      background-image: url(../images/buy-now-modal-ice-cream@2x.jpg);
+    }
+  }
+
+  &::after {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  }
+
+  .product-label:hover &,
+  .product-label:focus & {
+    background-color: rgba(150, 175, 140, 0.3);
+  }
+
+  .basic-checkbox:checked + & {
+    background-color: rgb(150, 175, 140);
+  }
+}
+
+.custom-checkbox--yellow {
+  border: 2px solid #efd478;
+
+  &::before {
+    background-image: url(../images/buy-now-modal-ice-coffee.jpg);
+    @include retina {
+      background-image: url(../images/buy-now-modal-ice-coffee@2x.jpg);
+    }
+  }
+
+  &::after {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+
+  .product-label:hover &,
+  .product-label:focus & {
+    background-color: rgba(239, 211, 120, 0.3);
+  }
+
+  .basic-checkbox:checked + & {
+    background-color: #efd478;
+  }
+}
+
+.custom-checkbox--brown {
+  border: 2px solid #d6936d;
+
+  &::before {
+    background-image: url(../images/buy-now-modal-milkshake.jpg);
+    @include retina {
+      background-image: url(../images/buy-now-modal-milkshake@2x.jpg);
+    }
+  }
+
+  &::after {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  }
+
+  .product-label:hover &,
+  .product-label:focus & {
+    background-color: rgba(214, 147, 109, 0.3);
+  }
+
+  .basic-checkbox:checked + & {
+    background-color: #d6936d;
+  }
+}
+
+.modal__input {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  width: 224px;
+  height: 32px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--textColorMain);
+
+  @include tablet {
+    width: 368px;
+    height: 42px;
+  }
+}
+
+.modal__textarea {
+  margin-bottom: 26px;
+  height: 65px;
+
+  resize: none;
+
+  @include tablet {
+    width: 368px;
+    height: 84px;
+  }
+}
