@@ -1,3 +1,10 @@
+.buy-now-modal {
+  @include tablet {
+    padding-right: 54px;
+    padding-left: 54px;
+  }
+}
+
 .buy-now-title {
   margin-bottom: 83px;
   @include tablet {

@@ -958,6 +958,13 @@ a {
   color: var(--textColorMain);
 }
 
+@media screen and (min-width: 768px) {
+  .buy-now-modal {
+    padding-right: 54px;
+    padding-left: 54px;
+  }
+}
+
 .buy-now-title {
   margin-bottom: 83px;
 }
