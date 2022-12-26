@@ -231,8 +231,6 @@
     flex-direction: column;
     align-items: center;
     
-    // padding: 12px 55px;
-
     @media screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: center;
@@ -242,7 +240,6 @@
 .contacts__btn-map {
     width: 196px;
     height: 42px;
-    // margin-top: 23px;
     margin-bottom: 13px;
 
     font-weight: 600;
@@ -298,7 +295,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        // margin-top: 23px;
+        
     }
 }
 
@@ -310,8 +307,6 @@
 }
 
 .contacts__btn-icon {
-    // display: flex;
-    // align-items: center;
     margin-left: 4px;
 
     .contacts__btn-form:focus &,
