@@ -23,6 +23,7 @@
             class="basic-checkbox visually-hidden"
             type="checkbox"
             name="product-label"
+            checked
           />
           <span class="custom-checkbox custom-checkbox--yellow">
             ice coffee
@@ -54,6 +55,8 @@
         name="phone"
         placeholder="Phone"
         minlength="7"
+        pattern="[0-9]{10}|[\+]\d{12}"
+        title="Please enter a valid phone number. E.g. 0975555555."
         required
       />
 
@@ -63,7 +66,7 @@
         placeholder="Comment"
       ></textarea>
 
-      <button class="modal__button" type="submit">Submit</button>
+      <button class="modal__button" type="submit" id="submit">Submit</button>
     </form>
   </div>
 </div>
