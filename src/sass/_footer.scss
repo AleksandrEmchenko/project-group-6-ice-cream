@@ -10,6 +10,7 @@
   @media screen and (min-width: 1200px) {
     padding: 0 16px;
     max-width: 1200px;
+    border-bottom: 1px solid #E1E1E1;
   }
 }
 .footer-wrap {
@@ -186,5 +187,8 @@
     padding-bottom: 12px;
     display: flex;
     flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1200px) {
+    border-top: none;
   }
 }
