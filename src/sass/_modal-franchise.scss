@@ -17,6 +17,7 @@ textarea {
     height: 100%;
     background-color: rgba(248, 210, 78, 0.2);
     opacity: 1;
+    transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .close-button {
@@ -26,7 +27,7 @@ textarea {
     top: 12px;
     right: 12px;
     margin-left: auto;
-    cursor: url("./../images/cursor.png"), auto;
+    cursor: url('./../images/yellow-cursor.png'), auto;;
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -47,12 +48,15 @@ textarea {
     background-color: rgba(252, 252, 252, 1);
     border: 2px solid #F8D24E;
     transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms linear;
+    .is-hidden & {
+            transform: translate(-50%, -50%) scale(0.2);
+        }
 }
 
 @media screen and (min-width: 320px) {
     .franchise-modal {
         width: 280px;
-        padding: 28px;
     }
 }
 
@@ -113,6 +117,7 @@ textarea {
 }
 
 .franchise__input {
+    cursor: url('./../images/yellow-cursor.png'), auto;
     width: 100%;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
@@ -180,7 +185,7 @@ textarea {
     width: 114px;
     margin-left: auto;
     margin-right: auto;
-    cursor: url("./../images/cursor.png"), auto;
+    cursor: url('./../images/yellow-cursor.png'), auto;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -219,7 +224,7 @@ textarea {
     border-color: red;
 }
 
-.franchise__input:not(:focus):not(:placeholder-shown):invalid~.error-message {
+.franchise__input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
     display: block;
 }
 
@@ -227,7 +232,7 @@ textarea {
     border-color: green;
 }
 
-.franchise__input+span {
+.franchise__input  +span {
     position: relative;
 }
 
@@ -254,8 +259,4 @@ textarea {
     font-weight: 400;
     line-height: 1.4;
     margin-top: 5px;
-}
-
-.franchise__input:invalid + .send-button {
-    color:rgba(171, 171, 171, 1);
 }
