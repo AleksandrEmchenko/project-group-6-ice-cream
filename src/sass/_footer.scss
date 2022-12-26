@@ -104,12 +104,12 @@
   justify-content: center;
   background-color: var(--secondaryColor);
   cursor: url('./../images/cursor.png');
-  &:hover {
+}
+.networks-link:hover {
     cursor: url('./../images/yellow-cursor.png'), auto;
-  }
-  &:focus {
+}
+.networks-link:focus {
     outline: none;
-  }
 }
 .networks-icon {
   fill: #84a178;
@@ -117,11 +117,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url('./../images/cursor.png');
-  &:hover {
+  .networks-link:hover & {
     fill: var(--textColorMainAlt);
-    cursor: url('./../images/yellow-cursor.png'), auto;
   }
-  &:focus {
+  .networks-link:focus & {
     fill: var(--textColorMainAlt);
   }
 }
@@ -148,13 +147,17 @@
 }
 .footer-tel {
   color: var(--textColorMainAlt);
-  cursor: url('./../images/cursor.png');
-  &:hover {
-    cursor: url('./../images/yellow-cursor.png'), auto;
-  }
+  transition-property: font-size;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: url('./../images/cursor.png'); 
   &:focus {
     outline: none;
   }
+}
+.footer-tel:hover {
+  cursor: url('./../images/yellow-cursor.png'), auto;
+  font-size: 14px;
 }
 .rights {
   color: var(--textColorFooter);
