@@ -8,28 +8,26 @@
             below and we will reach out for additional information. We appreciate your patience.</p>
         <form class="franchise-form">
             <div class="franchise-inputs">
-                <label for="user-name" class="franchise-form__title">
-                    <input type="text" name="user-name" class="franchise__input" id="user-name" placeholder="Name" required/>
+                <div class="franchise-form__item">
+                    <input type="text" name="user-name" class="franchise__input"  placeholder="Name" required/>
                     <span></span>
                     <p class="error-message">Please enter your name</p>
-                </label>
+                </div>
 
-                <label for="user-tel" class="franchise-form__title">
-                    <input type="tel" name="user-tel" class="franchise__input" id="user-tel" placeholder="Phone"
+                <div class="franchise-form__item">
+                    <input type="tel" name="user-tel" class="franchise__input"  placeholder="Phone"
                         pattern="[0-9]{10}|[\+]\d{12}" required />
                         <span></span>
                         <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
-                </label>
+                </div>
 
-                <label for="user-mail" class="franchise-form__title">
-                    <input type="email" name="user-mail" class="franchise__input" id="user-mail" placeholder="Email" />
+                <div class="franchise-form__item">
+                    <input type="email" name="user-mail" class="franchise__input"  placeholder="Email" />
                     <span></span>
                     <p class="error-message">Please enter a valid e-mail.</p>
-                </label>
+                </div>
 
-                <label for="comment" class="franchise-form__title">
-                    <textarea name="comment" class="franchise__input" id="comment" placeholder="Comment"></textarea>
-                </label>
+                <textarea name="comment" class="franchise__input" id="comment" placeholder="Comment"></textarea>
             </div>
 
             <button class="send-button" type="submit" id="submit">Submit</button>
