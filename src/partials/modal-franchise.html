@@ -9,13 +9,13 @@
         <form class="franchise-form">
             <div class="franchise-inputs">
                 <div class="franchise-form__item">
-                    <input type="text" name="user-name" class="franchise__input"  placeholder="Name" required/>
+                    <input type="text" name="user-name" class="franchise__input"  placeholder="* Name" required/>
                     <span></span>
                     <p class="error-message">Please enter your name</p>
                 </div>
 
                 <div class="franchise-form__item">
-                    <input type="tel" name="user-tel" class="franchise__input"  placeholder="Phone"
+                    <input type="tel" name="user-tel" class="franchise__input"  placeholder="* Phone"
                         pattern="[0-9]{10}|[\+]\d{12}" required />
                         <span></span>
                         <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
@@ -30,7 +30,7 @@
                 <textarea name="comment" class="franchise__input" id="comment" placeholder="Comment"></textarea>
             </div>
 
-            <button class="send-button" type="submit" id="submit">Submit</button>
+            <button class="send-button" type="submit" id="submitbutton">Submit</button>
         </form>
         <button class="close-button" data-franchise-close>
             <svg width="20" height="20">

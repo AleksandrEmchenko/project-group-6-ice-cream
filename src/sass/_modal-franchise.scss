@@ -102,14 +102,10 @@ textarea {
 
 .franchise__input {
 
-   // cursor: url('./../images/cursor.png'), auto;
-
     width: 100%;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid var(--backgroundColorAbout);
     border-radius: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.4;
@@ -133,8 +129,6 @@ textarea {
 
 
 .franchise__text {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
@@ -177,8 +171,6 @@ textarea {
 
 .send-button {
     display: inline-block;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -256,10 +248,13 @@ textarea {
 }
 
 .error-message {
-    font-family: Montserrat;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.4;
     margin-top: 5px;
+}
+
+form:invalid ~ .send-button {
+    pointer-events: none;
+    background-color: red;
 }
