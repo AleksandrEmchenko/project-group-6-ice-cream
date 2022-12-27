@@ -10,7 +10,7 @@
   @media screen and (min-width: 1200px) {
     padding: 0 16px;
     max-width: 1200px;
-    border-bottom: var(--borderColor);
+    border-bottom: 1px solid var(--borderColor);
   }
 }
 .footer-wrap {
@@ -178,7 +178,7 @@
 .footer-border {
   align-items: center;
   justify-content: center;
-  border-top: var(--borderColor);
+  border-top: 1px solid var(--borderColor);
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
