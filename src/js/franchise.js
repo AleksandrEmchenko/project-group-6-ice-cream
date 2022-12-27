@@ -1,23 +1,14 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('[data-franchise-open]'),
-    closeMenuBtn: document.querySelector('[data-franchise-close]'),
-    menu: document.querySelector('[data-franchise]'),
-    body: document.querySelector('body'),
-    menuList: document.querySelector('.menu-list'),
+    openMapModalBtn: document.querySelector("[data-franchise-open]"),
+    closeMapModalBtn: document.querySelector("[data-franchise-close]"),
+    mapModal: document.querySelector("[data-franchise]"),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  // refs.menuList.addEventListener('click', removeMenu);
+  refs.openMapModalBtn.addEventListener("click", toggleMapModal);
+  refs.closeMapModalBtn.addEventListener("click", toggleMapModal);
 
-  function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scroll');
-  }
-
-  function removeMenu() {
-    refs.menu.classList.add('is-hidden');
-    refs.body.classList.remove('no-scroll');
+  function toggleMapModal() {
+    refs.mapModal.classList.toggle("is-hidden");
   }
 })();
