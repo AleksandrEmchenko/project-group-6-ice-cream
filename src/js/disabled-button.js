@@ -1,7 +1,6 @@
-
 function disableField() {
   const invalidForm = document.querySelector('.franchise__input:invalid');
-  const submitBtn = document.getElementById('submit');
+  const submitBtn = document.getElementById('submitbutton');
   if (invalidForm) {
     submitBtn.setAttribute('disabled', true);
   } else {
