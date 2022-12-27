@@ -1,24 +1,16 @@
 .contact_section{
     position: relative;
-    background-color: #84A178;
-    
-
+    background-color: var(--backgroundColorAbout);
     @media screen and (max-width: 767px) {
-				height: 1095px;
-                
-				}
+        height: 1095px;
+        }
     @media screen and (min-width: 768px) {
-                height: 370px;
-                
-            }
-
+            height: 370px;
+        }
     @media screen and (min-width: 1200px) {
             height: 640px;
-            
         }
-
 }
-
 .contacts__container {
     position: absolute;
     
@@ -35,7 +27,6 @@
         top: -365px;
         padding-bottom: 60px;
     }
-
     @media screen and (min-width: 768px) {
         max-width: 768px;
         padding-left: 32px;
@@ -64,7 +55,6 @@
         flex-wrap: wrap;
         gap: 16px;
     }
-
     @media screen and (min-width: 1200px) {
         gap: 32px;
     }
@@ -175,8 +165,10 @@
     padding-top: 24px;
     padding-bottom: 24px;
 
-    border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
+    // border-top: 1px solid #e1e1e1;
+    border-top: 1px solid var(--borderColor);
+    // border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid var(--borderColor);
 }
 
 .contacts__work-text {
