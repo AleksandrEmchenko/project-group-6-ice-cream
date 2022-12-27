@@ -22,13 +22,15 @@ textarea {
 
 .franchise-modal {
     width: calc(100% - 15px);
+    max-height: 100%;
+    overflow: auto;
     padding: 28px;
     position: absolute;
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    background-color: rgba(252, 252, 252, 1);
-    border: 2px solid #F8D24E;
+    background-color: var(--iconFill);
+    border: 2px solid var(--secondaryColor);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
     .is-hidden & {
@@ -102,7 +104,7 @@ textarea {
     cursor: url('./../images/cursor.png'), auto;
     width: 100%;
     background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
+    border: 1px solid var(--backgroundColorAbout);
     border-radius: 10px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -123,7 +125,7 @@ textarea {
 .franchise__input:hover,
 .franchise__input:focus-visible,
 .franchise__input:focus {
-    border: 1px solid #F8D24E;
+    border: 1px solid var(--secondaryColor);
 
 }
 
@@ -149,7 +151,7 @@ textarea {
 
 
 ::placeholder {
-    color: rgba(19, 19, 19, 1);
+    color: var(--textColorMain);
     opacity: 1;
 }
 
@@ -160,13 +162,13 @@ textarea {
     top: 12px;
     right: 12px;
     margin-left: auto;
-    cursor: url('./../images/yellow-cursor.png'), auto;;
+    cursor: url('./../images/yellow-cursor.png'), auto;
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .close-button:hover,
 .close-button:focus {
-    fill: rgba(10, 136, 23, 1);
+    fill: var(--hoverIconFill);
     outline: none;
     transform: scale(1.1);
 }
@@ -178,11 +180,10 @@ textarea {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
-    background-color: #F8D24E;
+    background-color: var(--secondaryColor);
     border-color: transparent;
     border-radius: 10px;
     padding: 12px 34px;
-    width: 114px;
     margin-left: auto;
     margin-right: auto;
     cursor: url('./../images/yellow-cursor.png'), auto;
@@ -199,21 +200,21 @@ textarea {
 }
 
 .send-button:hover {
-    background-color: rgba(10, 136, 23, 1);
+    background-color: var(--hoverIconFill);
     transform: scale(1.1);
 }
 
 .send-button:focus {
-    background-color: rgba(10, 136, 23, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--hoverIconFill);
+    color: var(--iconFill);
     transform: scale(1.1);
     outline: none;
 }
 
 .send-button:disabled,
 .send-button[disabled] {
-    background-color: rgba(171, 171, 171, 1);
-    color: rgba(0, 0, 0, 1);
+    background-color: var(--textColorThird);
+    color: var(--blackColor);
 }
 
 .error-message {
