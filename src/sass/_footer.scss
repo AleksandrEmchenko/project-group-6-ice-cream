@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: #84a178;
+    background-color: var(--backgroundColorAbout);
 }
 .container {
   margin: 0 auto;
@@ -10,7 +10,7 @@
   @media screen and (min-width: 1200px) {
     padding: 0 16px;
     max-width: 1200px;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: var(--borderColor);
   }
 }
 .footer-wrap {
@@ -113,7 +113,7 @@
     outline: none;
 }
 .networks-icon {
-  fill: #84a178;
+  fill: var(--backgroundColorAbout);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -178,7 +178,7 @@
 .footer-border {
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #e1e1e1;
+  border-top: var(--borderColor);
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
