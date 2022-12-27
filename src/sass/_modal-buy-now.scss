@@ -97,7 +97,7 @@
 }
 
 .custom-checkbox--green {
-  border: 2px solid var(--customCheckboxGreen);
+  border: 2px solid #96af8c;
 
   &::before {
     background-image: url(../images/buy-now-modal-ice-cream.jpg);
@@ -112,7 +112,7 @@
         rgba(156, 190, 143, 0.7),
         rgba(156, 190, 143, 0.7)
       ),
-      var(--aboutCircle);
+      #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 
@@ -127,7 +127,7 @@
 }
 
 .custom-checkbox--yellow {
-  border: 2px solid var(--products-modal-ice-coffe-bg);
+  border: 2px solid #efd478;
 
   &::before {
     background-image: url(../images/buy-now-modal-ice-coffee.jpg);
@@ -142,7 +142,7 @@
         rgba(248, 210, 78, 0.7),
         rgba(248, 210, 78, 0.7)
       ),
-      var(--aboutCircle);
+      #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
@@ -152,12 +152,12 @@
   }
 
   .basic-checkbox:checked + & {
-    background-color: var(--products-modal-ice-coffe-bg);
+    background-color: #efd478;
   }
 }
 
 .custom-checkbox--brown {
-  border: 2px solid var( --textColorSecondary);
+  border: 2px solid #d6936d;
 
   &::before {
     background-image: url(../images/buy-now-modal-milkshake.jpg);
@@ -172,7 +172,7 @@
         rgba(213, 117, 63, 0.7),
         rgba(213, 117, 63, 0.7)
       ),
-      var(--aboutCircle);
+      #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
 
@@ -182,7 +182,7 @@
   }
 
   .basic-checkbox:checked + & {
-    background-color: var(--textColorSecondary);
+    background-color: #d6936d;
   }
 }
 
@@ -193,7 +193,7 @@
   height: 32px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid var(--backgroundColorAbout);
+  border: 1px solid #84a178;
   border-radius: 10px;
 
   font-size: 12px;
