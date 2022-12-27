@@ -36,9 +36,9 @@
 
   padding: 28px;
 
-  background-color: var(--textColorMainAlt);
+  background-color: #fcfcfc;
   border-radius: 10px;
-  outline: 2px solid var(--secondaryColor);
+  outline: 2px solid #f8d24e;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
@@ -73,7 +73,7 @@
 
   &:hover,
   &:focus {
-    color: var(--hoverIconFill);
+    color: #0a8817;
   }
 }
 
@@ -131,18 +131,18 @@
   color: var(--textColorMain);
 
   border-radius: 10px;
-  background-color: var(--secondaryColor);
+  background-color: #f8d24e;
 
   transition: 250ms linear;
 
   &:hover {
-    background-color: var(--hoverIconFill);
+    background-color: #0a8817;
     cursor: url('./../images/yellow-cursor.png'), auto;
   }
 
   &:focus {
-    background-color: var(--hoverIconFill);
-    color: var(--iconFill);
+    background-color: #0a8817;
+    color: #ffffff;
   }
 }
 
