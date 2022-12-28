@@ -40,33 +40,24 @@
         </label>
       </div>
 
-      <input
-        class="modal__input"
-        type="text"
-        name="name"
-        placeholder="Name"
-        minlength="2"
-        required
-      />
-
-      <input
-        class="modal__input"
-        type="tel"
-        name="phone"
-        placeholder="Phone"
-        minlength="7"
-        pattern="[0-9]{10}|[\+]\d{12}"
-        title="Please enter a valid phone number. E.g. 0975555555."
-        required
-      />
-
-      <textarea
-        class="modal__textarea modal__input"
-        name="comment"
-        placeholder="Comment"
-      ></textarea>
-
-      <button class="modal__button" type="submit" id="submit">Submit</button>
+      <div class="common_modal-inputs">
+        <div class="modal-form__item">
+          <input type="text" name="user-name" class="common__input buy_input" placeholder="* Name" required />
+          <span></span>
+          <p class="error-message">Please enter your name</p>
+        </div>
+      
+        <div class="modal-form__item">
+          <input type="tel" name="user-tel" class="common__input" placeholder="* Phone" pattern="[0-9]{10}|[\+]\d{12}"
+            required />
+          <span></span>
+          <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
+        </div>
+      
+        <textarea name="comment" class="common__input" id="comment" placeholder="Comment"></textarea>
+      </div>
+      
+      <button class="send-button" type="submit" id="submit">Submit</button>
     </form>
   </div>
 </div>

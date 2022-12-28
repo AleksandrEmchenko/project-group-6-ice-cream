@@ -4,32 +4,24 @@
         border: 2px solid var(--secondaryColor);
         border-radius: 10px;
         width: 280px;
-
         padding: 28px 20px;
-        
         margin-right: auto;
         margin-left: auto;
-
         left: 50%;
         top: 50%;
-
         height: calc(100% - 80px);
         overflow: auto;
-        
-
-        transform: translate(-50%, -50%) scale(1) translateY(0);
-        
-        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 250ms linear;
 
         @media screen and (min-width: 768px) {
-                padding: 32px 40px;
-                width: 568px;
+            padding: 32px 40px;
+            width: 568px;
             }
 }
 
 .products-moadal__backdrop.is-hidden .products-moadal {
-    transform: translate(-50%, -50%) scale(1.1);
-    
+    transform: translate(-50%, -50%) scale(0.2);
 }
 
 .products-moadal__backdrop.is-hidden {
@@ -49,12 +41,8 @@
     
         background-color: rgba(73, 73, 69, 0.5);
         padding: 60px 0;
-
-        opacity: 1;
         visibility: visible;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 250ms linear, visibility 250ms linear;
         opacity: 1;
     }
 
@@ -384,128 +372,131 @@
     margin-bottom: 11;
 }
 
-
-.products-moadal__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
+.product-list {
+    margin-bottom: 40px;
 }
+// .products-moadal__form {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-top: 40px;
+// }
 
-.products-form__name {
-    position: relative;
-    margin-bottom: 16px;
-}
+// .products-form__name {
+//     position: relative;
+//     margin-bottom: 16px;
+// }
 
-.products-moadal__name-input {
+// .products-moadal__name-input {
 
-    width: 240px;
-    height: 42px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--backgroundColorAbout);
-    border-radius: 10px;
-    padding-left: 10px;
+//     width: 240px;
+//     height: 42px;
+//     background: rgba(248, 210, 78, 0.1);
+//     border: 1px solid var(--backgroundColorAbout);
+//     border-radius: 10px;
+//     padding-left: 10px;
 
-    @media screen and (min-width: 768px) {
-            width: 348px;
-        }
+//     @media screen and (min-width: 768px) {
+//             width: 348px;
+//         }
 
-    &::placeholder {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.4;
-        color: var(--textColorMain);
-    }
-}
+//     &::placeholder {
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 1.4;
+//         color: var(--textColorMain);
+//     }
+// }
 
-.products-moadal__phone {
-    position: relative;
+// .products-moadal__phone {
+//     position: relative;
     
-}
-.products-form__phone {
-margin-bottom: 16px;
-}
+// }
+// .products-form__phone {
+// margin-bottom: 16px;
+// }
 
-.products-moadal__phone-input {
-    width: 240px;
-    height: 42px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--backgroundColorAbout);
-    border-radius: 10px;
-    padding-left: 10px;
+// .products-moadal__phone-input {
+//     width: 240px;
+//     height: 42px;
+//     background: rgba(248, 210, 78, 0.1);
+//     border: 1px solid var(--backgroundColorAbout);
+//     border-radius: 10px;
+//     padding-left: 10px;
 
-    @media screen and (min-width: 768px) {
-            width: 348px;
-        }
+//     @media screen and (min-width: 768px) {
+//             width: 348px;
+//         }
 
-    &::placeholder {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.4;
-            color: var(--textColorMain);
-        }
-}
+//     &::placeholder {
+//             font-weight: 400;
+//             font-size: 14px;
+//             line-height: 1.4;
+//             color: var(--textColorMain);
+//         }
+// }
 
-.products-moadal__textarea {
+// .products-moadal__textarea {
 
-    width: 368px;
-    height: 84px;
+//     width: 368px;
+//     height: 84px;
 
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--backgroundColorAbout);
-    border-radius: 10px;
+//     background: rgba(248, 210, 78, 0.1);
+//     border: 1px solid var(--backgroundColorAbout);
+//     border-radius: 10px;
 
-    resize: none;
-    width: 100%;
+//     resize: none;
+//     width: 100%;
 
-    padding-left: 10px;
-    padding-top: 10px;
+//     padding-left: 10px;
+//     padding-top: 10px;
 
-    @media screen and (min-width: 768px) {
-            width: 348px;
-        }
-    &::placeholder {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.4;
-            color: var(--textColorMain);
-        }
-    }
-
-
-    .products-form__btn {
-        display: block;
-        width: 132px;
-        height: 42px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
+//     @media screen and (min-width: 768px) {
+//             width: 348px;
+//         }
+//     &::placeholder {
+//             font-weight: 400;
+//             font-size: 14px;
+//             line-height: 1.4;
+//             color: var(--textColorMain);
+//         }
+//     }
 
 
-        background: var(--secondaryColor);
-        border-radius: 10px;
-        border: none;
+//     .products-form__btn {
+//         display: block;
+//         width: 132px;
+//         height: 42px;
+//         margin-left: auto;
+//         margin-right: auto;
+//         margin-top: 40px;
 
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        color: var(--textColorMain);
 
-        cursor: url('./../images/yellow-cursor.png'), auto;
+//         background: var(--secondaryColor);
+//         border-radius: 10px;
+//         border: none;
 
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         font-weight: 600;
+//         font-size: 14px;
+//         line-height: 1.2;
+//         color: var(--textColorMain);
+
+//         cursor: url('./../images/yellow-cursor.png'), auto;
+
+//             transition-property: background-color;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             
             
 
 
             
-        &:hover, &:focus {
-            background: var(--hoverIconFill);
-        }
+//         &:hover, &:focus {
+//             background: var(--hoverIconFill);
+//         }
 
-        &:disabled {
-            background: var(--textColorThird);
-        }
-    }
+//         &:disabled {
+//             background: var(--textColorThird);
+//         }
+//     }
+

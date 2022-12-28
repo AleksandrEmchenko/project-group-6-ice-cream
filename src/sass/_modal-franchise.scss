@@ -25,7 +25,7 @@ textarea {
     max-height: 100%;
     overflow: auto;
     padding: 28px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     border-radius: 10px;
@@ -51,34 +51,6 @@ textarea {
     }
 }
 
-.franchise-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .franchise-form {
-        width: calc(100% - 80px);
-    }
-}
-
-.franchise-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 24px;
-}
-
-@media screen and (min-width: 768px) {
-    .franchise-inputs {
-        gap: 16px;
-        margin-bottom: 32px;
-    }
-}
-
 .franchise__title {
     font-family: 'Seymour One';
     font-style: normal;
@@ -98,33 +70,6 @@ textarea {
         line-height: 1.4;
         margin-bottom: 24px;
     }
-}
-
-.franchise__input {
-
-    width: 100%;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--backgroundColorAbout);
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    padding: 8px 12px;
-    outline: none;
-    transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s
-}
-
-@media screen and (min-width: 768px) {
-    .franchise__input {
-        font-size: 14px;
-    }
-}
-
-.franchise__input:hover,
-.franchise__input:focus-visible,
-.franchise__input:focus {
-    border: 1px solid var(--secondaryColor);
-
 }
 
 
@@ -151,23 +96,23 @@ textarea {
     opacity: 1;
 }
 
-.close-button {
-    color: inherit;
-    display: block;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    margin-left: auto;
-    cursor: url('./../images/yellow-cursor.png'), auto;
-    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
+// .close-button {
+//     color: inherit;
+//     display: block;
+//     position: absolute;
+//     top: 12px;
+//     right: 12px;
+//     margin-left: auto;
+//     cursor: url('./../images/yellow-cursor.png'), auto;
+//     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+// }
 
-.close-button:hover,
-.close-button:focus {
-    fill: var(--hoverIconFill);
-    outline: none;
-    transform: scale(1.1);
-}
+// .close-button:hover,
+// .close-button:focus {
+//     fill: var(--hoverIconFill);
+//     outline: none;
+//     transform: scale(1.1);
+// }
 
 .send-button {
     display: inline-block;
@@ -211,50 +156,3 @@ textarea {
     color: var(--blackColor);
 }
 
-.error-message {
-    display: none;
-}
-
-.franchise__input:not(:focus):not(:placeholder-shown):invalid {
-    border-color: red;
-}
-
-.franchise__input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
-    display: block;
-}
-
-.franchise__input:not(:focus):not(:placeholder-shown):valid {
-    border-color: green;
-}
-
-.franchise__input  +span {
-    position: relative;
-}
-
-.franchise__input+span::before {
-    position: absolute;
-    right: -20px;
-    top: 5px;
-}
-
-.franchise__input:not(:focus):not(:placeholder-shown):valid + span::before {
-    content: "✓";
-    color: green;
-}
-
-.franchise__input:not(:focus):not(:placeholder-shown):invalid + span::before {
-    content: "X";
-    color: red;
-}
-
-.error-message {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.4;
-    margin-top: 5px;
-}
-
-form:invalid ~ .send-button {
-    pointer-events: none;
-    background-color: red;
-}
