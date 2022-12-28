@@ -1,158 +1,136 @@
 button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 textarea {
-    resize: none;
-    font-size: 12px;
+  resize: none;
+  font-size: 12px;
 }
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    transition: opacity 250ms linear, visibility 250ms linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .franchise-modal {
-    width: calc(100% - 15px);
-    max-height: 100%;
-    overflow: auto;
-    padding: 28px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    background-color: var(--iconFill);
-    border: 2px solid var(--secondaryColor);
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms linear;
-    .is-hidden & {
-            transform: translate(-50%, -50%) scale(0.2);
-        }
+  width: calc(100% - 15px);
+  max-height: 100%;
+  overflow: auto;
+  padding: 28px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  background-color: var(--iconFill);
+  border: 2px solid var(--secondaryColor);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition);
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0.2);
+  }
 }
 
 @media screen and (min-width: 320px) {
-    .franchise-modal {
-        width: 280px;
-    }
+  .franchise-modal {
+    width: 280px;
+  }
 }
 
-@media screen and (min-width: 768px) {
-    .franchise-modal {
-        width: 568px;
-        padding: 30px 60px;
-    }
+@include tablet {
+  .franchise-modal {
+    width: 568px;
+    padding: 30px 60px;
+  }
 }
 
 .franchise__title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 20px;
-
+  font-family: var(--secondaryFontFamily);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-    .franchise__title {
-        margin-left: 63px;
-        margin-right: 63px;
-        font-size: 20px;
-        line-height: 1.4;
-        margin-bottom: 24px;
-    }
+@include tablet {
+  .franchise__title {
+    margin-left: 63px;
+    margin-right: 63px;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
 }
-
 
 .franchise__text {
-    font-weight: 400;
-    font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+@include tablet {
+  .franchise__text {
+    font-size: 16px;
     line-height: 1.4;
-    margin: 0;
-    margin-bottom: 24px;
-
+    margin-bottom: 32px;
+  }
 }
-
-@media screen and (min-width: 768px) {
-    .franchise__text {
-        font-size: 16px;
-        line-height: 1.4;
-        margin-bottom: 32px;
-    }
-}
-
 
 ::placeholder {
-    color: var(--textColorMain);
-    opacity: 1;
+  color: var(--textColorMain);
+  opacity: 1;
 }
-
-// .close-button {
-//     color: inherit;
-//     display: block;
-//     position: absolute;
-//     top: 12px;
-//     right: 12px;
-//     margin-left: auto;
-//     cursor: url('./../images/yellow-cursor.png'), auto;
-//     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-// }
-
-// .close-button:hover,
-// .close-button:focus {
-//     fill: var(--hoverIconFill);
-//     outline: none;
-//     transform: scale(1.1);
-// }
 
 .send-button {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    background-color: var(--secondaryColor);
-    border-color: transparent;
-    border-radius: 10px;
-    padding: 12px 34px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: url('./../images/yellow-cursor.png'), auto;
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  background-color: var(--secondaryColor);
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 12px 34px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: url('./../images/yellow-cursor.png'), auto;
+  transition: color var(--transition), background-color var(--transition),
+    transform var(--transition);
 }
 
-@media screen and (min-width: 768px) {
-    .send-button {
-        font-size: 14px;
-        line-height: 1.21;
-        padding: 14px 32px;
-        width: 121px;
-    }
+@include tablet {
+  .send-button {
+    font-size: 14px;
+    line-height: 1.21;
+    padding: 14px 32px;
+    width: 121px;
+  }
 }
 
 .send-button:hover {
-    background-color: var(--hoverIconFill);
-    transform: scale(1.1);
+  background-color: var(--hoverIconFill);
+  transform: scale(1.1);
 }
 
 .send-button:focus {
-    background-color: var(--hoverIconFill);
-    color: var(--iconFill);
-    transform: scale(1.1);
-    outline: none;
+  background-color: var(--hoverIconFill);
+  color: var(--iconFill);
+  transform: scale(1.1);
+  outline: none;
 }
 
 .send-button:disabled,
 .send-button[disabled] {
-    background-color: var(--textColorThird);
-    color: var(--blackColor);
+  background-color: var(--textColorThird);
+  color: var(--blackColor);
 }
-

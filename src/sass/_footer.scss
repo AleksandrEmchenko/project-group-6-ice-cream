@@ -1,5 +1,5 @@
 .footer-section {
-    background-color: var(--backgroundColorAbout);
+  background-color: var(--backgroundColorAbout);
 }
 .container {
   margin: 0 auto;
@@ -108,16 +108,14 @@
   cursor: url('./../images/cursor.png');
 }
 .networks-link:hover {
-    cursor: url('./../images/yellow-cursor.png'), auto;
+  cursor: url('./../images/yellow-cursor.png'), auto;
 }
 .networks-link:focus {
-    outline: none;
+  outline: none;
 }
 .networks-icon {
   fill: var(--backgroundColorAbout);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
   cursor: url('./../images/cursor.png');
   .networks-link:hover & {
     fill: var(--textColorMainAlt);
@@ -149,10 +147,8 @@
 }
 .footer-tel {
   color: var(--textColorMainAlt);
-  transition-property: font-size;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: url('./../images/cursor.png'); 
+  transition: font-size var(--transition);
+  cursor: url('./../images/cursor.png');
   &:focus {
     outline: none;
   }
@@ -197,6 +193,4 @@
   @media screen and (min-width: 1200px) {
     border-top: none;
   }
-
-  
 }

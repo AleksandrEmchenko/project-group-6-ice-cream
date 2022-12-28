@@ -6,14 +6,13 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
-
   }
 }
 //__________________HEADER______________________________
@@ -23,17 +22,17 @@
 
   background-color: var(--headerHeroBackground);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 8px;
   }
 }
 
 .header-logo {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 
   &:hover {
     transform: scale(1.5);
@@ -46,18 +45,17 @@
 
 .navigation-list {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     gap: 28px;
     align-items: baseline;
-
   }
 }
 
 .navigation-link {
   padding-top: 32px;
   padding-bottom: 13px;
-  font-family: 'Montserrat';
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -68,8 +66,7 @@
 
   color: var(--textColorMainAlt);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition), transform var(--transition);
 
   &:hover,
   &:focus {
@@ -89,7 +86,7 @@
   &:focus {
     cursor: url('./../images/yellow-cursor.png'), auto;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: none;
   }
 }
@@ -97,7 +94,7 @@
 .menu-icon {
   fill: var(--iconFill);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 
   .menu-button:hover &,
   .menu-button:focus & {
@@ -106,10 +103,10 @@
     outline: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: none;
   }
 }
@@ -131,7 +128,7 @@
 
   background-color: var(--headerHeroBackground);
   transform: translateX(-100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 
 .mobile-menu.is-open {
@@ -142,7 +139,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .mob-container {
@@ -170,7 +166,7 @@
 }
 
 .mob-nav-link {
-  font-family: 'Montserrat';
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -183,8 +179,7 @@
 
   color: var(--textColorMainAlt);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition), transform var(--transition);
 
   &:hover,
   &:focus {
@@ -200,7 +195,7 @@
   margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Montserrat';
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -213,32 +208,31 @@
   border-radius: 10px;
   border-color: transparent;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: background var(--transition);
 
   &:hover {
     cursor: url('./../images/yellow-cursor.png'), auto;
-    background:var(--hoverIconFill);
+    background: var(--hoverIconFill);
   }
 
   &:focus {
-    background:var(--hoverIconFill);
+    background: var(--hoverIconFill);
     color: var(--iconFill);
     outline: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin: 0;
   }
 }
 .tab-button {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
   }
 }
 .mob-button {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -253,10 +247,10 @@
   width: 100%;
   height: 502px;
   background-color: var(--headerHeroBackground);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     height: 415px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     height: 664px;
   }
 }
@@ -265,7 +259,7 @@
   max-width: 320px;
   padding-top: 50px;
   margin-bottom: 32px;
-  font-family: 'Seymour One';
+  font-family: var(--secondaryFontFamily);
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -275,7 +269,7 @@
 
   color: var(--textColorMainAlt);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-width: 500px;
     font-size: 38px;
     line-height: 1.26;
@@ -289,13 +283,12 @@
 .hero-buttons {
   display: flex;
   gap: 12px;
-
 }
 
 .products-button {
   text-decoration: none;
   padding: 11px 26px;
-  font-family: 'Montserrat';
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -308,8 +301,7 @@
   border-radius: 8px;
   color: var(--textColorMain);
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition), transform var(--transition);
 
   &:hover {
     transform: scale(1.1);
@@ -323,7 +315,7 @@
     outline: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 14px;
     line-height: 1.29;
   }
@@ -331,7 +323,7 @@
 
 .made-button {
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -344,8 +336,7 @@
   border-color: transparent;
   color: var(--secondaryColor);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition), transform 250ms var(--transition);
 
   &:hover {
     transform: scale(1.1);
@@ -358,7 +349,7 @@
     outline: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 14px;
     line-height: 1.21;
   }
@@ -375,21 +366,20 @@
   bottom: -5;
   left: 83px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 268px;
     left: 408px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     left: 652px;
     top: 104px;
   }
-
 }
 
 .hero-description {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
     position: absolute;
     width: 139px;
@@ -397,7 +387,7 @@
     left: 216px;
     top: 265px;
 
-    font-family: 'Montserrat';
+    font-family: var(--primaryFontFamily);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -405,14 +395,14 @@
 
     color: var(--textColorMainAlt);
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition);
   }
 
   &:hover {
     transform: scale(1.2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     left: 257px;
     top: 441px;
     width: 200px;
@@ -424,14 +414,14 @@
 
 .hero-arrow {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
     position: absolute;
     top: 360px;
     left: 216px;
     fill: var(--textColorMainAlt);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 40px;
     height: 16px;
     left: 257px;
@@ -441,7 +431,7 @@
 
 .hero-second-image {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
     position: absolute;
     z-index: 1;
@@ -449,20 +439,19 @@
     margin-top: 12px;
     transition: transform 1500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     top: 355px;
     left: -20px;
   }
 
   &:hover {
-  transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
   }
-
 }
 
 .business {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -471,13 +460,13 @@
     left: 704px;
     top: 50px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     left: 1100px;
     top: 50px;
   }
 
   .amount {
-    font-family: 'Montserrat';
+    font-family: var(--primaryFontFamily);
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
@@ -486,29 +475,28 @@
     text-transform: uppercase;
 
     color: var(--textColorMain);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition), color var(--transition);
 
     &:hover {
       transform: scale(1.5);
       color: var(--secondaryColor);
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       font-size: 46px;
       line-height: 1.22;
     }
   }
 
   .items {
-    font-family: 'Montserrat';
+    font-family: var(--primaryFontFamily);
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
 
     color: var(--textColorMainAlt);
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       font-size: 14px;
       line-height: 1.21;
     }
