@@ -20,6 +20,17 @@
   pointer-events: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  font-size: 12px;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -77,9 +88,6 @@
   }
 }
 
-.modal__close-icon {
-  fill: currentColor;
-}
 
 .modal__title {
   margin-bottom: 20px;
