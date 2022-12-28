@@ -20,6 +20,17 @@
   pointer-events: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  font-size: 12px;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -77,9 +88,6 @@
   }
 }
 
-.modal__close-icon {
-  fill: currentColor;
-}
 
 .modal__title {
   margin-bottom: 20px;
@@ -256,4 +264,46 @@
     font-size: 14px;
     margin-top: 16px;
   }
+}
+
+.send-button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  background-color: var(--secondaryColor);
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 12px 34px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: url('./../images/yellow-cursor.png'), auto;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+@media screen and (min-width: 768px) {
+  .send-button {
+    font-size: 14px;
+    line-height: 1.21;
+    padding: 14px 32px;
+    width: 121px;
+  }
+}
+
+.send-button:hover {
+  background-color: var(--hoverIconFill);
+  transform: scale(1.1);
+}
+
+.send-button:focus {
+  background-color: var(--hoverIconFill);
+  color: var(--iconFill);
+  transform: scale(1.1);
+  outline: none;
+}
+
+.send-button:disabled,
+.send-button[disabled] {
+  background-color: var(--textColorThird);
+  color: var(--blackColor);
 }
