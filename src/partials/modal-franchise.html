@@ -6,33 +6,33 @@
             the application process resumes, we will contact you for further information. Please fill out the contact
             information
             below and we will reach out for additional information. We appreciate your patience.</p>
-        <form class="franchise-form">
-            <div class="franchise-inputs">
-                <div class="franchise-form__item">
-                    <input type="text" name="user-name" class="franchise__input"  placeholder="* Name" required/>
+        <form class="common_modal-form">
+            <div class="common_modal-inputs">
+                <div class="modal-form__item">
+                    <input type="text" name="user-name" class="common__input"  placeholder="* Name" required/>
                     <span></span>
                     <p class="error-message">Please enter your name</p>
                 </div>
 
-                <div class="franchise-form__item">
-                    <input type="tel" name="user-tel" class="franchise__input"  placeholder="* Phone"
+                <div class="modal-form__item">
+                    <input type="tel" name="user-tel" class="common__input"  placeholder="* Phone"
                         pattern="[0-9]{10}|[\+]\d{12}" required />
                         <span></span>
                         <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
                 </div>
 
-                <div class="franchise-form__item">
-                    <input type="email" name="user-mail" class="franchise__input"  placeholder="Email" />
+                <div class="modal-form__item">
+                    <input type="email" name="user-mail" class="common__input"  placeholder="Email" />
                     <span></span>
                     <p class="error-message">Please enter a valid e-mail.</p>
                 </div>
 
-                <textarea name="comment" class="franchise__input" id="comment" placeholder="Comment"></textarea>
+                <textarea name="comment" class="common__input" id="comment" placeholder="Comment"></textarea>
             </div>
 
             <button class="send-button" type="submit" id="submitbutton">Submit</button>
         </form>
-        <button class="close-button" data-franchise-close>
+        <button class="modal__close" data-franchise-close>
             <svg width="20" height="20">
                 <use href="./images/sprite.svg#icon-cross"></use>
             </svg>

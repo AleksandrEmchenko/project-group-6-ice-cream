@@ -2,7 +2,7 @@
   <div class="products-moadal">
     <button
       type="button"
-      class="products-moadal__close-btn"
+      class="modal__close"
       data-products-modal-close
     >
       <svg width="20" height="20">
@@ -49,7 +49,7 @@
     </ul>
     <h3 class="products-moadal__ingredients">Ingredients</h3>
 
-    <ul>
+    <ul class="product-list">
       <li class="products-moadal__list-item">
         <span class="products-moadal__item">Milk</span>
         <span class="products-moadal__item">100ml</span>
@@ -81,46 +81,25 @@
       </li>
     </ul>
 
-    <form name="products-form" autocomplete="on" class="products-moadal__form">
-      <div class="products-form__name">
-        <label for="user_name" class="products-form__name-lable"></label>
-        <input
-          type="text"
-          name="name"
-          id="user_name"
-          placeholder="Name"
-          minlength="2"
-          required
-          class="products-moadal__name-input modal__input"
-        />
+    <form class="common_modal-form">
+      <div class="common_modal-inputs">
+        <div class="modal-form__item">
+          <input type="text" name="user-name" class="common__input" placeholder="* Name" required />
+          <span></span>
+          <p class="error-message">Please enter your name</p>
+        </div>
+    
+        <div class="modal-form__item">
+          <input type="tel" name="user-tel" class="common__input" placeholder="* Phone" pattern="[0-9]{10}|[\+]\d{12}"
+            required />
+          <span></span>
+          <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
+        </div>
+    
+        <textarea name="comment" class="common__input" id="comment" placeholder="Comment"></textarea>
       </div>
-
-      <div class="products-form__phone">
-        <label for="user_phone" class="products-form__phone-lable"></label>
-        <input
-          type="tel"
-          name="phone"
-          id="user_phone"
-          placeholder="Phone"
-          minlength="4"
-          required
-          class="products-moadal__phone-input modal__input"
-        />
-        <p class="error-message">
-          Please enter a valid phone number. E.g. 0975555555.
-        </p>
-      </div>
-
-      <textarea
-        name="comment"
-        rows="10"
-        placeholder="Comment"
-        class="products-moadal__textarea"
-      ></textarea>
-
-      <button type="submit" id="submit" class="products-form__btn">
-        Submit
-      </button>
+    
+      <button class="send-button" type="submit" id="submit_info-1">Submit</button>
     </form>
   </div>
 </div>
@@ -131,7 +110,7 @@
   <div class="products-moadal">
     <button
       type="button"
-      class="products-moadal__close-btn"
+      class="modal__close"
       data-icecoffee-modal-close
     >
       <svg width="20" height="20">
@@ -178,7 +157,7 @@
     </ul>
     <h3 class="products-moadal__ingredients">Ingredients</h3>
 
-    <ul>
+    <ul class="product-list">
       <li class="products-moadal__list-item">
         <span class="products-moadal__item">Milk</span>
         <span class="products-moadal__item">175ml</span>
@@ -205,43 +184,25 @@
       </li>
     </ul>
 
-    <form name="products-form" autocomplete="on" class="products-moadal__form">
-      <div class="products-form__name">
-        <label for="user_name" class="products-form__name-lable"></label>
-        <input
-          type="text"
-          name="name"
-          id="user_name"
-          placeholder="Name"
-          minlength="2"
-          required
-          class="products-moadal__name-input modal__input"
-        />
+    <form class="common_modal-form">
+      <div class="common_modal-inputs">
+        <div class="modal-form__item">
+          <input type="text" name="user-name" class="common__input" placeholder="* Name" required />
+          <span></span>
+          <p class="error-message">Please enter your name</p>
+        </div>
+    
+        <div class="modal-form__item">
+          <input type="tel" name="user-tel" class="common__input info_input" placeholder="* Phone" pattern="[0-9]{10}|[\+]\d{12}"
+            required />
+          <span></span>
+          <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
+        </div>
+    
+        <textarea name="comment" class="common__input" id="comment" placeholder="Comment"></textarea>
       </div>
-
-      <div class="products-form__phone">
-        <label for="user_phone" class="products-form__phone-lable"></label>
-        <input
-          type="tel"
-          name="phone"
-          id="user_phone"
-          placeholder="Phone"
-          minlength="4"
-          required
-          class="products-moadal__phone-input modal__input"
-        />
-      </div>
-
-      <textarea
-        name="comment"
-        rows="10"
-        placeholder="Comment"
-        class="products-moadal__textarea"
-      ></textarea>
-
-      <button type="submit" id="submit" class="products-form__btn">
-        Submit
-      </button>
+    
+      <button class="send-button" type="submit" id="submit_info-2">Submit</button>
     </form>
   </div>
 </div>
@@ -252,7 +213,7 @@
   <div class="products-moadal">
     <button
       type="button"
-      class="products-moadal__close-btn"
+      class="modal__close"
       data-milkshakes-modal-close
     >
       <svg width="20" height="20">
@@ -299,7 +260,7 @@
     </ul>
     <h3 class="products-moadal__ingredients">Ingredients</h3>
 
-    <ul>
+    <ul class="product-list">
       <li class="products-moadal__list-item">
         <span class="products-moadal__item">Milk</span>
         <span class="products-moadal__item">100ml</span>
@@ -331,43 +292,25 @@
       </li>
     </ul>
 
-    <form name="products-form" autocomplete="on" class="products-moadal__form">
-      <div class="products-form__name">
-        <label for="user_name" class="products-form__name-lable"></label>
-        <input
-          type="text"
-          name="name"
-          id="user_name"
-          placeholder="Name"
-          minlength="2"
-          required
-          class="products-moadal__name-input modal__input"
-        />
+    <form class="common_modal-form">
+      <div class="common_modal-inputs">
+        <div class="modal-form__item">
+          <input type="text" name="user-name" class="common__input" placeholder="* Name" required />
+          <span></span>
+          <p class="error-message">Please enter your name</p>
+        </div>
+    
+        <div class="franchise-form__item">
+          <input type="tel" name="user-tel" class="common__input" placeholder="* Phone" pattern="[0-9]{10}|[\+]\d{12}"
+            required />
+          <span></span>
+          <p class="error-message">Please enter a valid phone number. E.g. 0975555555.</p>
+        </div>
+    
+        <textarea name="comment" class="common__input" id="comment" placeholder="Comment"></textarea>
       </div>
-
-      <div class="products-form__phone">
-        <label for="user_phone" class="products-form__phone-lable"></label>
-        <input
-          type="tel"
-          name="phone"
-          id="user_phone"
-          placeholder="Phone"
-          minlength="4"
-          required
-          class="products-moadal__phone-input modal__input"
-        />
-      </div>
-
-      <textarea
-        name="comment"
-        rows="10"
-        placeholder="Comment"
-        class="products-moadal__textarea"
-      ></textarea>
-
-      <button type="submit" id="submit" class="products-form__btn">
-        Submit
-      </button>
+    
+      <button class="send-button" type="submit" id="submit_info-3">Submit</button>
     </form>
   </div>
 </div>
