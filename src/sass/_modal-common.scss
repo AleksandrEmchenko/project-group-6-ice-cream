@@ -11,7 +11,7 @@
 
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .is-hidden {
@@ -52,7 +52,7 @@ textarea {
   outline: 2px solid #f8d24e;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms linear;
+  transition: transform var(--transition);
 
   .is-hidden & {
     transform: translate(-50%, -50%) scale(0.2);
@@ -80,11 +80,11 @@ textarea {
   background: transparent;
   cursor: url('./../images/yellow-cursor.png'), auto;
 
-  transition: color 250ms linear;
+  transition: color var(--transition);
 
   &:hover,
   &:focus {
-    fill: #0a8817;
+    fill: var(--hoverIconFill);
   }
 }
 
@@ -130,7 +130,7 @@ textarea {
 .modal__button {
   padding: 12px 34px;
 
-  font-family: 'Montserrat';
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   text-decoration: none;
   font-weight: 600;
@@ -139,18 +139,18 @@ textarea {
   color: var(--textColorMain);
 
   border-radius: 10px;
-  background-color: #f8d24e;
+  background-color: var(--secondaryColor);
 
-  transition: 250ms linear;
+  transition: all var(--transition);
 
   &:hover {
-    background-color: #0a8817;
+    background-color: var(--hoverIconFill);
     cursor: url('./../images/yellow-cursor.png'), auto;
   }
 
   &:focus {
-    background-color: #0a8817;
-    color: #ffffff;
+    background-color: var(--hoverIconFill);
+    color: var(--iconFill);
   }
 }
 
@@ -176,7 +176,7 @@ textarea {
   margin-bottom: 24px;
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .common_modal-inputs {
     gap: 16px;
     margin-bottom: 32px;
@@ -185,7 +185,6 @@ textarea {
 }
 
 .common__input {
-
   width: 100%;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--backgroundColorAbout);
@@ -195,10 +194,10 @@ textarea {
   line-height: 1.4;
   padding: 8px 12px;
   outline: none;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s
+  transition: border var(--transition);
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .common__input {
     font-size: 14px;
   }
@@ -208,14 +207,13 @@ textarea {
 .common__input:focus-visible,
 .common__input:focus {
   border: 1px solid var(--secondaryColor);
-
 }
 
 .common__input:not(:focus):not(:placeholder-shown):invalid {
   border-color: red;
 }
 
-.common__input:not(:focus):not(:placeholder-shown):invalid~.error-message {
+.common__input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
   display: block;
 }
 
@@ -223,31 +221,31 @@ textarea {
   border-color: green;
 }
 
-.common__input+span {
+.common__input + span {
   position: relative;
 }
 
-.common__input+span::before {
+.common__input + span::before {
   position: absolute;
   right: -17px;
   top: 5px;
 }
 
-@media screen and (min-width: 768px) {
-  .common__input+span::before {
+@include tablet {
+  .common__input + span::before {
     position: absolute;
     right: -20px;
     top: 5px;
   }
 }
 
-.common__input:not(:focus):not(:placeholder-shown):valid+span::before {
-  content: "✓";
+.common__input:not(:focus):not(:placeholder-shown):valid + span::before {
+  content: '✓';
   color: green;
 }
 
-.common__input:not(:focus):not(:placeholder-shown):invalid+span::before {
-  content: "X";
+.common__input:not(:focus):not(:placeholder-shown):invalid + span::before {
+  content: 'X';
   color: red;
 }
 
@@ -259,51 +257,9 @@ textarea {
   margin-top: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .error-message {
     font-size: 14px;
     margin-top: 16px;
   }
-}
-
-.send-button {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  background-color: var(--secondaryColor);
-  border-color: transparent;
-  border-radius: 10px;
-  padding: 12px 34px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: url('./../images/yellow-cursor.png'), auto;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
-
-@media screen and (min-width: 768px) {
-  .send-button {
-    font-size: 14px;
-    line-height: 1.21;
-    padding: 14px 32px;
-    width: 121px;
-  }
-}
-
-.send-button:hover {
-  background-color: var(--hoverIconFill);
-  transform: scale(1.1);
-}
-
-.send-button:focus {
-  background-color: var(--hoverIconFill);
-  color: var(--iconFill);
-  transform: scale(1.1);
-  outline: none;
-}
-
-.send-button:disabled,
-.send-button[disabled] {
-  background-color: var(--textColorThird);
-  color: var(--blackColor);
 }

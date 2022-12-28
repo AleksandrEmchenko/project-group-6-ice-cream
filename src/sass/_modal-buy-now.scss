@@ -61,7 +61,7 @@
 
   color: var(--textColorMain);
 
-  transition: background 250ms linear;
+  transition: background var(--transition);
 
   &::before {
     content: ' ';
@@ -107,12 +107,7 @@
   }
 
   &::after {
-    background: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
+    background: var(--productsGradientCream);
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 
@@ -137,12 +132,7 @@
   }
 
   &::after {
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
+    background: var(--productsGradientCoffee);
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
@@ -152,12 +142,12 @@
   }
 
   .basic-checkbox:checked + & {
-    background-color: #efd478;
+    background-color: var(--products-modal-ice-coffe-bg);
   }
 }
 
 .custom-checkbox--brown {
-  border: 2px solid #d6936d;
+  border: 2px solid var(--textColorSecondary);
 
   &::before {
     background-image: url(../images/buy-now-modal-milkshake.jpg);
@@ -167,12 +157,7 @@
   }
 
   &::after {
-    background: linear-gradient(
-        0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
+    background: var(--productsGradientShake);
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
 
@@ -182,39 +167,6 @@
   }
 
   .basic-checkbox:checked + & {
-    background-color: #d6936d;
+    background-color: var(--textColorSecondary);
   }
 }
-
-// .modal__input {
-//   margin-bottom: 12px;
-//   padding: 8px 12px;
-//   width: 224px;
-//   height: 32px;
-
-//   background: rgba(248, 210, 78, 0.1);
-//   border: 1px solid #84a178;
-//   border-radius: 10px;
-
-//   font-size: 12px;
-//   line-height: 1.4;
-//   color: var(--textColorMain);
-  
-
-//   @include tablet {
-//     width: 368px;
-//     height: 42px;
-//   }
-// }
-
-// .modal__textarea {
-//   margin-bottom: 26px;
-//   height: 65px;
-
-//   resize: none;
-
-//   @include tablet {
-//     width: 368px;
-//     height: 84px;
-//   }
-// }

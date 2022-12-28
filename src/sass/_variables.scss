@@ -1,18 +1,43 @@
 :root {
-    --backcgoundSection: #AEC6A5; //Колір фону секцій
-    --secondaryColor: #F8D24E; //Колір кнопок
-    --textColorMain: #131313; //Основний колір тексту
-    --textColorMainAlt: #FCFCFC; //Білий відтінок тексту
-    --textColorSecondary: #D6936D; //Колір тексту адреси
-    --textColorThird: #ABABAB; //Колір тексту часу
-    --textColorFooter: #7A7A7A; //Колір тексту футера
-    --backgroundColorAbout: #84A178; // Колір секції About
-    --headerHeroBackground: #84A278;
-    --iconFill: #ffffff;
-    --hoverIconFill: #0A8817;
-    --blackColor: #000000;
-    --borderColor: #E1E1E1; // Колір двох ліній у Contacts
-    --products-modal-ice-coffe-bg: #EFD478;
-    --products-modal-border-green: #9CBE8F;
-		--coloruButtonPagination: #D9D9D9; 
-}   
+  --backcgoundSection: #aec6a5; //Колір фону секцій
+  --secondaryColor: #f8d24e; //Колір кнопок
+  --textColorMain: #131313; //Основний колір тексту
+  --textColorMainAlt: #fcfcfc; //Білий відтінок тексту
+  --textColorSecondary: #d6936d; //Колір тексту адреси
+  --textColorThird: #ababab; //Колір тексту часу
+  --textColorFooter: #7a7a7a; //Колір тексту футера
+  --backgroundColorAbout: #84a178; // Колір секції About
+  --headerHeroBackground: #84a278;
+  --iconFill: #ffffff;
+  --hoverIconFill: #0a8817;
+  --blackColor: #000000;
+  --borderColor: #e1e1e1; // Колір двох ліній у Contacts
+  --products-modal-ice-coffe-bg: #efd478;
+  --products-modal-border-green: #9cbe8f;
+  --coloruButtonPagination: #d9d9d9;
+  --productsGradientCream: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  --productsGradientCoffee: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  --productsGradientShake: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --textShadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --boxShadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  --boxShadowContacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  --boxShadowContactsAlt: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --primaryFontFamily: 'Montserrat';
+  --secondaryFontFamily: 'Seymour One';
+}
